@@ -5,7 +5,7 @@ The origin of this document is back to November 2017 when I learning Dynmaic Pro
 
 It has been used as a handout for my class in January 2018.
 
-It isn't perfect, or it won't be perfect at all. Maybe it is worse than you think. However, it may be still useful for some people who are beginners to Dynamic Programming (like me).
+It isn't perfect, and it won't be perfect at all. Maybe it is worse than you think. However, it may be still useful for some people who are beginners to Dynamic Programming (like me).
 
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
@@ -15,10 +15,12 @@ For stable PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf
 If you need the source code, please **fully** clone this repository to avoid any problem.
 
 ## Build
-### For Linux:
-Use `Latexmk -lualatex --shell-escape DP.tex` to make (recommended).
+You should add your `$TEXHOME` to your PATH first.
 
-or you can compile the source manually using LuaLaTeX.
+### For Linux:
+Use `Latexmk -lualatex --shell-escape DP.tex` to make (recommended), 
+
+or you can compile the source manually using LuaLaTeX command.
 
 ### For Windows:
 Use the `build.bat` script to build the project, after that you will find the PDF file `DP.pdf` under the root dictionary of the project, and a log file `logs.log`.
@@ -47,7 +49,7 @@ Use the `build.bat` script to build the project, after that you will find the PD
 
 4. Q: Why I get Errors/Warnings from LuaLaTeX when I try to compile the file?
 
-   A: Maybe you didn't fully clone the repo., please make sure that you have fully clone the repository, and use the right tool (LuaLaTeX) to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the document properly, and there's no good Bold Italic font for Chinese, that's all I know.
+   A: Maybe you didn't fully clone the repository, please make sure that you have fully clone the repository, and use the right tool (LuaLaTeX) to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the document properly, and there's no good Bold Italic font for Chinese, that's all I know.
 
 5. Q: Why there are some pictures/songs of Miku?
 
@@ -55,7 +57,7 @@ Use the `build.bat` script to build the project, after that you will find the PD
 
 6. Q: Why there aren't many picuture/songs of Miku?
 
-   A: I don't have a lot of time to add them as a senior high school student.
+   A: Because I don't have a lot of time to add them as a senior high school student, however I will add some later.
 
 7. Q: The font of Nihon characters are not so good.
 
