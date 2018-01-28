@@ -1,18 +1,26 @@
 # DPB4B
 **D**ynamic **P**rogramming **B**ook **for** **B**eginners
 
+The origin of this document is back to November 2017 when I learning Dynmaic Programming for NOIp.
+
+It has been used as a handout for my class in January 2018.
+
+It isn't perfect, or it won't be perfect at all. Maybe it is worse than you think. However, it may be still useful for some people who are beginners to Dynamic Programming (as me).
+
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
 ## Download
 PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf)
 
-If source code is needed, please fully clone this repository.
+If you need the source code, please **fully** clone this repository to avoid any problem.
 
 ## Build
-Use `Latexmk -lualatex --shell-escape DP.tex` to make.
+Use `Latexmk -lualatex --shell-escape DP.tex` to make (recommended).
 
-## Dependence:
-- Any popular distribution of $\LaTeX$
+or you can compile the source manually using LuaLaTeX.
+
+## Dependence
+- Any popular distribution of LaTeX with LuaLaTeX
 - Python
 - Pygments package in Python
 
@@ -23,15 +31,15 @@ Use `Latexmk -lualatex --shell-escape DP.tex` to make.
 
 2. Q: License of the project?
 
-   A: GPL3.0 for the sorce code, and CC3.0 BY-NC-SA for the compiled files. However, the pictures from Pixiv.net may with their copyright.
+   A: GPL3.0 for the sorce code, and CC3.0 BY-NC-SA for the compiled files. However, the pictures from Pixiv.net may have their own licenses.
 
 3. Q: How to contribute?
 
-   A: Because my code is not so well. You can indent the code by using `latexindent` tools that has been included in common distributions of $\LaTeX$ first. Then please modify the documents freely.
+   A: Because my code is not so well, you can indent the code by using `latexindent` tools that has been included in common distributions of LaTeX first. Then please modify the documents freely.
 
-4. Q: Why I get Errors/Warnings from $\LuaLaTeX$ when I try to compile the file?
+4. Q: Why I get Errors/Warnings from LuaLaTeX when I try to compile the file?
 
-   A: Maybe you didn't fully clone the repo., please make sure that you have fully clone the repo., and use the right tool(LuaLaTeX)  to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the documents, and there's no good Bold Italic fonts for Chinese, that's all I know.
+   A: Maybe you didn't fully clone the repo., please make sure that you have fully clone the repository, and use the right tool (LuaLaTeX) to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the document properly, and there's no good Bold Italic font for Chinese, that's all I know.
 
 5. Q: Why there are some pictures/songs of Miku?
 
@@ -51,4 +59,4 @@ Use `Latexmk -lualatex --shell-escape DP.tex` to make.
 
 9. Q: Any plans for the future?
 
-   A: Maybe I will add more questions, and of course, fix font problems.
+   A: Maybe I will add more questions, and of course, fix font problems in the future.
