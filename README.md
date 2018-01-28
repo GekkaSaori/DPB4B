@@ -14,6 +14,11 @@ For stable PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf
 
 If you need the source code, please **fully** clone this repository to avoid any problem.
 
+## Dependence
+- Any popular distribution of LaTeX with LuaLaTeX
+- Python
+- Pygments package in Python
+
 ## Build
 You should add your `$TEXHOME` to your PATH first.
 
@@ -24,11 +29,6 @@ or you can compile the source manually using LuaLaTeX command.
 
 ### For Windows:
 Use the `build.bat` script to build the project, after that you will find the PDF file `DP.pdf` under the root dictionary of the project, and a log file `logs.log`.
-
-## Dependence
-- Any popular distribution of LaTeX with LuaLaTeX
-- Python
-- Pygments package in Python
 
 ## FAQ
 0. Q: Why didn't you update the PDF file for a long time though you **DID** update your source code?
@@ -80,6 +80,20 @@ Use the `build.bat` script to build the project, after that you will find the PD
 
     A: Because I don't have a platform on \*nix, sorry for that. But it should runs smoothly on \*nix platform. Maybe I will fix the problems with crossing-platform and write a script to help you to compile the document later.
 
- 11. Q: Why not use `\include` or `\input` command to divide your document?
+11. Q: Why not use `\include` or `\input` command to divide your document?
  
-     A: It's a historical problem. Since I haven't thought about making it public or it will become so long, it uses `article` document class, and not be divided. Will be fixed after it becomes stable.
+    A: It's a historical problem. Since I haven't thought about making it public or it will become so long, it uses `article` document class, and not be divided. Will be fixed after it becomes stable.
+
+## Todo List
+Clearly there are many things to do.
+
+1. [ ] Finish the construction of the document.
+   - [ ] Add more example to the document (you can still see some lines like `\iffalse` and `\fi` to comment some lines of the document now).
+   - [ ] Add Thanks page and Copyright page.
+   - [ ] Add some more pictures and songs of Miku (even you don't like it).
+   - [ ] Change the font for Nihon characters.
+   - [ ] Fix typos, format errors in the document.
+2. [ ] Unite the style of the code (That will be simple after the document becomes stable).
+3. [ ] Divide the document into several part, and change the document class to `book`.
+4. [ ] Fix the crossing-platform problems.
+5. [ ] Solve other historical issues.
