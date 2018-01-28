@@ -10,7 +10,7 @@ It isn't perfect, and it won't be perfect at all. Maybe it is worse than you thi
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
 ## Download
-For stable PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf) (not updated frequently)
+For stable PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf) **(not updated frequently)**
 
 If you need the source code, please **fully** clone this repository to avoid any problem.
 
@@ -33,7 +33,7 @@ Use the `build.bat` script to build the project, after that you will find the PD
 ## FAQ
 0. Q: Why didn't you update the PDF file for a long time though you **DID** update your source code?
 
-   A: Because the PDF file is huge, so it takes a long time to upload the file.
+   A: Because the PDF file is huge, so it takes a long time (and hard) to upload the PDF file (especially in China), and I am too lazy to upload it. :P
 
 1. Q: Why no English version?
 
@@ -41,11 +41,11 @@ Use the `build.bat` script to build the project, after that you will find the PD
 
 2. Q: License of the project?
 
-   A: GPL3.0 for the sorce code, and CC3.0 BY-NC-SA for the compiled files. However, the pictures from Pixiv.net may have their own licenses.
+   A: GPL3.0 for the sorce code, and CC3.0 BY-NC-SA for the compiled files. However, the pictures from *Pixiv.net* may have their own licenses.
 
 3. Q: How to contribute?
 
-   A: Because my code is not so well, you can indent the code by using `latexindent` tools that has been included in common distributions of LaTeX first. Then please modify the documents freely.
+   A: Because my coding-style is not so good, you can indent the code by using `latexindent` tools that has been included in common distributions of LaTeX first. Then please modify the documents freely.
 
 4. Q: Why I get Errors/Warnings from LuaLaTeX when I try to compile the file?
 
@@ -53,11 +53,16 @@ Use the `build.bat` script to build the project, after that you will find the PD
 
 5. Q: Why there are some pictures/songs of Miku?
 
-   A: Because I am a Miku fans. And if you don't like them, just delete them. :P
-
+   A: Because I am a Miku fans. And if you don't like them, just delete them or simply add following command around them:
+   ```TeX
+   \iffalse
+   ...
+   \fi
+   ```
+   :P
 6. Q: Why there aren't many picuture/songs of Miku?
 
-   A: Because I don't have a lot of time to add them as a senior high school student, however I will add some later.
+   A: Because I don't have a lot of time to add them as a senior high school student, however if you like, I will add some later.
 
 7. Q: The font of Nihon characters are not so good.
 
@@ -70,3 +75,11 @@ Use the `build.bat` script to build the project, after that you will find the PD
 9. Q: Any plans for the future?
 
    A: Maybe I will add more questions, and of course, fix font problems in the future.
+
+10. Q: Why not \*nix-friendly?
+
+    A: Because I don't have a platform on \*nix, sorry for that. But it should runs smoothly on \*nix platform. Maybe I will fix the problems with crossing-platform and write a script to help you to compile the document later.
+
+ 11. Q: Why not use `\include` or `\input` command to divide your document?
+ 
+     A: It's a historical problem. Since I haven't thought about making it public or it will become so long, it uses `article` document class, and not be divided. Will be fixed after it becomes stable.
