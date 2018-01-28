@@ -10,7 +10,7 @@ It isn't perfect, or it won't be perfect at all. Maybe it is worse than you thin
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
 ## Download
-PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf)
+For stable PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf) (not updated frequently)
 
 If you need the source code, please **fully** clone this repository to avoid any problem.
 
