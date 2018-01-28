@@ -25,6 +25,10 @@ or you can compile the source manually using LuaLaTeX.
 - Pygments package in Python
 
 ## FAQ
+0. Q: Why didn't you update the PDF file for a long time though you **DID** update your source code?
+
+   A: Because the PDF file is huge, so it takes a long time to upload the file.
+
 1. Q: Why no English version?
 
    A: My English is poor, so maybe no English version. Sorry for that.
