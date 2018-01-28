@@ -5,7 +5,7 @@ The origin of this document is back to November 2017 when I learning Dynmaic Pro
 
 It has been used as a handout for my class in January 2018.
 
-It isn't perfect, or it won't be perfect at all. Maybe it is worse than you think. However, it may be still useful for some people who are beginners to Dynamic Programming (as me).
+It isn't perfect, or it won't be perfect at all. Maybe it is worse than you think. However, it may be still useful for some people who are beginners to Dynamic Programming (like me).
 
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
