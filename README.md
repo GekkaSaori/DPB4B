@@ -15,9 +15,13 @@ PDF File: [DP](https://github.com/MingqiHuang/DB4B/blob/master/DP.pdf)
 If you need the source code, please **fully** clone this repository to avoid any problem.
 
 ## Build
+### For Linux:
 Use `Latexmk -lualatex --shell-escape DP.tex` to make (recommended).
 
 or you can compile the source manually using LuaLaTeX.
+
+### For Windows:
+Use the `build.bat` script to build the project, after that you will find the PDF file `DP.pdf` under the root dictionary of the project, and a log file `logs.log`.
 
 ## Dependence
 - Any popular distribution of LaTeX with LuaLaTeX
