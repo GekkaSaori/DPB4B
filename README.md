@@ -39,7 +39,7 @@ or you can compile the source manually using LuaLaTeX.
 
 4. Q: Why I get Errors/Warnings from LuaLaTeX when I try to compile the file?
 
-   A: Maybe you didn't fully clone the repo., please make sure that you have fully clone the repository, and use the right tool (LuaLaTeX) to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the document properly, and there's no good Bold Italic font for Chinese, that's all I know.
+   A: Maybe you didn't fully clone the repo., please make sure that you have fully clone the repository, and use the right tool (LuaLaTeX) to compile the source. As it is a simple sigle file, it won't be so difficult to compile. And the Warnings about font shapes is normal, as I didn't set the font shapes of some parts of the document properly, and there's no good Bold Italic font for Chinese, that's all I know.
 
 5. Q: Why there are some pictures/songs of Miku?
 
