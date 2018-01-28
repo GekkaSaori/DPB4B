@@ -1,5 +1,5 @@
 # DPB4B
-**D**ynamic **P**rogramming **B**ook **for*** **B**eginners
+**D**ynamic **P**rogramming **B**ook **for** **B**eginners
 
 Please notice this document is still under construction, and there's **no** stable realase for it temporarily, sorry for that.
 
