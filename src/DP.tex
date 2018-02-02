@@ -13,6 +13,7 @@
 \usepackage{makecell}%form
 \usepackage{minted}%code environment
 \usepackage[amsmath,thmmarks]{ntheorem}%theorem environment
+\usepackage{datetime2}
 
 %Limitation:
 % There MUST be a space after Proofs!!!
@@ -28,6 +29,8 @@
 % 1. \DeclareCJKFont{stsong}{SimSun} SimSun was declared as stsong.
 % 2. \CreateShortcut{\songtizi}{stsong} Use \songtizi{...} to typeset words in SimSun.
 \newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+% Define Shortcut for \multirow command.
+%Modify it if necessary.
 
 % REDEFINE paragraph & subparagraph ENVIRONMENT:
 \makeatletter
@@ -75,7 +78,7 @@
 
 %DOCUMENT BEGINS:
 \begin{document}
-\title{\Huge 动态规划入门\\\Large Dynamic Programming Book for Beginners\\\author{Mingqi\_H}\date{\today}}
+\title{\Huge 动态规划入门\\\Large Dynamic Programming Book for Beginners\\\author{Mingqi\_H}\date{\emph{version = 2.0\alpha}\\Build Time: \DTMnow}}
 \maketitle
 
 \thispagestyle{empty}%Disable Page Numbering for title page.
