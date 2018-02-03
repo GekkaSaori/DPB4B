@@ -14,7 +14,9 @@
 \usepackage{minted}%code environment
 \usepackage[amsmath,thmmarks]{ntheorem}%theorem environment
 \usepackage{datetime2}
-
+\usepackage{yhmath}
+\usepackage{forest}
+\usepackage{rotating}
 %DEFINE VERSION:
 
 
@@ -41,7 +43,7 @@
 \newcommand{\bumprevis}{\directlua{dofile('./ver/bumprevis.lua')}}
 \newcommand{\bumpminor}{\directlua{dofile('./ver/bumpminor.lua')}}
 \newcommand{\bumpmajor}{\directlua{dofile('./ver/bumpmajor.lua')}}
-
+\newtheorem{solve}{解法}
 % REDEFINE paragraph & subparagraph ENVIRONMENT:
 \makeatletter
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
