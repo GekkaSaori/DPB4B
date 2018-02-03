@@ -1,0 +1,6 @@
+fx = io.open("./ver/version.cnf","r")
+a = fx:read("*number")
+b = fx:read("*number")
+c = fx:read("*number")
+fx:close()
+tex.print(string.format("%d.%d.%d",a,b,c))
