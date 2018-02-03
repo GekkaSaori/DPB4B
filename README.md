@@ -90,7 +90,7 @@ You can also build it using the editor you like.
 Clearly there are many things to do.
 
 1. [ ] Finish the construction of the document.
-   - [ ] Add more example to the document (you can still see some lines like `\iffalse` and `\fi` to comment some lines of the document now).
+   - [x] Add more example to the document (you can still see some lines like `\iffalse` and `\fi` to comment some lines of the document now).
    - [ ] Add Thanks page and Copyright page.
    - [ ] Add some more pictures and songs of Miku (even you don't like it).
    - [ ] Change the font for Nihon characters.
