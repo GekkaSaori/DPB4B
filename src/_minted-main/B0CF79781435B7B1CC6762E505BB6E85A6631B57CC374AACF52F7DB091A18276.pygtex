@@ -1,0 +1,116 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{c+cpf}{\PYGZlt{}bits/stdc++.h\PYGZgt{}}
+\PYG{k}{using} \PYG{k}{namespace} \PYG{n}{std}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{maxn}\PYG{o}{=}\PYG{l+m+mi}{110}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{maxm}\PYG{o}{=}\PYG{l+m+mi}{2010}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{mp}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{][}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{n}\PYG{p}{,}\PYG{n}{m}\PYG{p}{,}\PYG{n}{i}\PYG{p}{,}\PYG{n}{j}\PYG{p}{,}\PYG{n}{k}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,}\PYG{n}{z}\PYG{p}{,}\PYG{n}{ans}\PYG{p}{,}\PYG{n}{s}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{b}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{c}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{ha}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{],}\PYG{n}{oldf}\PYG{p}{,}\PYG{n}{newf}\PYG{p}{,}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{maxn}\PYG{p}{];}
+\PYG{k+kt}{double} \PYG{n}{T}\PYG{p}{;}\PYG{c+c1}{//模拟退火中的温度}
+\PYG{k+kt}{int} \PYG{n+nf}{read}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{tot}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{fh}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k+kt}{char} \PYG{n}{c}\PYG{o}{=}\PYG{n}{getchar}\PYG{p}{();}
+    \PYG{k}{while}\PYG{p}{((}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{o}{\PYGZlt{}}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{o}{||}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{9}\PYG{p}{))\PYGZob{}}\PYG{k}{if}\PYG{p}{(}\PYG{n}{c}\PYG{o}{==}\PYG{l+s+sc}{\PYGZsq{}\PYGZhy{}\PYGZsq{}}\PYG{p}{)}\PYG{n}{fh}\PYG{o}{=\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{c}\PYG{o}{=}\PYG{n}{getchar}\PYG{p}{();\PYGZcb{}}
+    \PYG{k}{while}\PYG{p}{((}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{p}{(}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{9}\PYG{p}{))\PYGZob{}}\PYG{n}{tot}\PYG{o}{=}\PYG{n}{tot}\PYG{o}{*}\PYG{l+m+mi}{10}\PYG{o}{+}\PYG{n}{c}\PYG{o}{\PYGZhy{}}\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{n}{c}\PYG{o}{=}\PYG{n}{getchar}\PYG{p}{();\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{tot}\PYG{o}{*}\PYG{n}{fh}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{dep}\PYG{p}{)}\PYG{c+c1}{//遍历这张图，x表示当前点的编号，dep表示当前遍历过的点的个数}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{dep}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{13}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}\PYG{c+c1}{//如果已经不是一棵树了，不符合题中“小明不想开发无用道路，即两个已经被挖掘过的宝藏屋之间的道路无需再开发”这一条件，进行剪枝。}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{x}\PYG{o}{!=}\PYG{n}{s}\PYG{p}{)\PYGZob{}}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{c}\PYG{p}{[}\PYG{n}{x}\PYG{p}{],}\PYG{n}{dep}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{);}\PYG{k}{return} \PYG{n}{vis}\PYG{p}{[}\PYG{n}{x}\PYG{p}{];\PYGZcb{}}\PYG{c+c1}{//若还未到达终点就继续进行DFS。}
+    \PYG{k}{else} \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}\PYG{c+c1}{//若到达终点表示这是一组可行解。}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{check}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{;}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{));}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{c+c1}{//以每一个点为起点进行DFS}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{vis}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{);}\PYG{c+c1}{//vis[i]表示以i号点为起点是否存在可行解。}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}\PYG{c+c1}{//不存在可行解}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{dfs2}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{)}\PYG{c+c1}{//用于计算$\sum L_i\times K_i$新值的搜索，x表示当前点的编号。}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{((}\PYG{n}{s}\PYG{o}{==}\PYG{n}{x}\PYG{p}{)}\PYG{o}{||}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{!=}\PYG{l+m+mi}{0}\PYG{p}{))} \PYG{k}{return} \PYG{n}{vis}\PYG{p}{[}\PYG{n}{x}\PYG{p}{];}\PYG{c+c1}{//如果是起点或者已经被访问过了就返回x点的深度。}
+    \PYG{k+kt}{int} \PYG{n}{t1}\PYG{o}{=}\PYG{n}{dfs2}\PYG{p}{(}\PYG{n}{c}\PYG{p}{[}\PYG{n}{x}\PYG{p}{])}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{c+c1}{//记录深度，即题目中的K}
+    \PYG{n}{vis}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{n}{t1}\PYG{p}{;}\PYG{c+c1}{//记录当前点的深度}
+    \PYG{n}{newf}\PYG{o}{=}\PYG{n}{newf}\PYG{o}{+}\PYG{n}{t1}\PYG{o}{*}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{c}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]][}\PYG{n}{x}\PYG{p}{];}\PYG{c+c1}{//更新$\sum L_i\times K_i$的值}
+    \PYG{k}{return} \PYG{n}{t1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{getnewf}\PYG{p}{()}\PYG{c+c1}{//对dfs2()的封装，用于计算$\sum L_i\times K_i$的值}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{;}
+    \PYG{n}{newf}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{vis}\PYG{p}{));}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{c+c1}{//以每个点为起点进行DFS}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{vis}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{dfs2}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}\PYG{c+c1}{//如果没被访问过，即当前点对答案的贡献还没有计算进去，就计算一下从当前点可以增广到的点的距离。}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void} \PYG{n+nf}{bfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{)}\PYG{c+c1}{//寻找近似解}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{l}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{r}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{i}\PYG{p}{;} \PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]}\PYG{o}{=}\PYG{n}{x}\PYG{p}{;} \PYG{n}{oldf}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{b}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{ha}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{ha}\PYG{p}{));} \PYG{n}{ha}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{while} \PYG{p}{(}\PYG{n}{l}\PYG{o}{\PYGZlt{}=}\PYG{n}{r}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+        \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{((}\PYG{n}{ha}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{==\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{p}{(}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]][}\PYG{n}{i}\PYG{p}{]}\PYG{o}{!=}\PYG{l+m+mf}{1e9}\PYG{p}{))}\PYG{c+c1}{//如果没有被增广过并且l与i之间有边}
+            \PYG{p}{\PYGZob{}}
+                \PYG{n}{ha}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{ha}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]]}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{c+c1}{//记录一下深度}
+                \PYG{n}{r}\PYG{o}{++}\PYG{p}{;} \PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{]}\PYG{o}{=}\PYG{n}{i}\PYG{p}{;}\PYG{c+c1}{//入队}
+                \PYG{n}{b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{];}\PYG{c+c1}{//记录一下父亲节点}
+                \PYG{n}{oldf}\PYG{o}{=}\PYG{n}{oldf}\PYG{o}{+}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]][}\PYG{n}{i}\PYG{p}{]}\PYG{o}{*}\PYG{n}{ha}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}\PYG{c+c1}{//计算原有的f函数}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{l}\PYG{o}{++}\PYG{p}{;}\PYG{c+c1}{//旧节点出队}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{ans}\PYG{o}{=}\PYG{n}{min}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,}\PYG{n}{oldf}\PYG{p}{);}\PYG{c+c1}{//两者取一个较小值。}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{main}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{n}\PYG{o}{=}\PYG{n}{read}\PYG{p}{();} \PYG{n}{m}\PYG{o}{=}\PYG{n}{read}\PYG{p}{();}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{for} \PYG{p}{(}\PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}
+        \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{i}\PYG{o}{==}\PYG{n}{j}\PYG{p}{)} \PYG{n}{mp}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+            \PYG{k}{else} \PYG{n}{mp}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{l+m+mf}{1e9}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{m}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{x}\PYG{o}{=}\PYG{n}{read}\PYG{p}{();} \PYG{n}{y}\PYG{o}{=}\PYG{n}{read}\PYG{p}{();} \PYG{n}{z}\PYG{o}{=}\PYG{n}{read}\PYG{p}{();}
+        \PYG{n}{mp}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{y}\PYG{p}{]}\PYG{o}{=}\PYG{n}{min}\PYG{p}{(}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{y}\PYG{p}{],}\PYG{n}{z}\PYG{p}{);}
+        \PYG{n}{mp}\PYG{p}{[}\PYG{n}{y}\PYG{p}{][}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{n}{min}\PYG{p}{(}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{y}\PYG{p}{][}\PYG{n}{x}\PYG{p}{],}\PYG{n}{z}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{ans}\PYG{o}{=}\PYG{l+m+mf}{1e9}\PYG{p}{;}
+    \PYG{n}{srand}\PYG{p}{(}\PYG{l+m+mi}{19260817}\PYG{p}{);}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{s}\PYG{o}{=}\PYG{n}{i}\PYG{p}{;} \PYG{n}{bfs}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}\PYG{c+c1}{//以每个点为起点进行一次BFS计算深度。}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mi}{2}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}\PYG{c+c1}{//如果只有两个点，就不需要退火。}
+        \PYG{k}{for} \PYG{p}{(}\PYG{n}{T}\PYG{o}{=}\PYG{l+m+mi}{10000}\PYG{p}{;}\PYG{n}{T}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mf}{0.00001}\PYG{p}{;}\PYG{n}{T}\PYG{o}{=}\PYG{n}{T}\PYG{o}{*}\PYG{l+m+mf}{0.9999}\PYG{p}{)}\PYG{c+c1}{//模拟退火过程，T表示温度。}
+        \PYG{p}{\PYGZob{}}
+            \PYG{n}{x}\PYG{o}{=}\PYG{p}{(}\PYG{n}{rand}\PYG{p}{()}\PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{))}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;} \PYG{k}{if} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZgt{}=}\PYG{n}{i}\PYG{p}{)} \PYG{n}{x}\PYG{o}{++}\PYG{p}{;}\PYG{c+c1}{//随机指定起点和终点。}
+            \PYG{n}{y}\PYG{o}{=}\PYG{p}{(}\PYG{n}{rand}\PYG{p}{()}\PYG{o}{\PYGZpc{}}\PYG{p}{(}\PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{))}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{y}\PYG{o}{\PYGZgt{}=}\PYG{n}{x}\PYG{p}{)} \PYG{n}{y}\PYG{o}{++}\PYG{p}{;}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{mp}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{y}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mf}{1e9}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}\PYG{c+c1}{//不连通}
+            \PYG{k}{for} \PYG{p}{(}\PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{n}{c}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{n}{b}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}\PYG{c+c1}{//复制一下b数组}
+            \PYG{n}{c}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{n}{y}\PYG{p}{;}\PYG{c+c1}{//起点的父亲节点是终点。}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{check}\PYG{p}{()}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}\PYG{c+c1}{//如果不存在可行解跳出循环}
+            \PYG{n}{getnewf}\PYG{p}{();}\PYG{c+c1}{//计算新的代价}
+            \PYG{k}{if} \PYG{p}{((}\PYG{n}{newf}\PYG{o}{\PYGZlt{}=}\PYG{n}{oldf}\PYG{p}{)}\PYG{o}{||}\PYG{p}{(} \PYG{n}{exp}\PYG{p}{((}\PYG{n}{oldf}\PYG{o}{\PYGZhy{}}\PYG{n}{newf}\PYG{p}{)}\PYG{o}{/}\PYG{n}{T}\PYG{p}{))}\PYG{o}{\PYGZgt{}=}\PYG{p}{((}\PYG{n}{rand}\PYG{p}{()}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{1000000}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mf}{1000000.0}\PYG{p}{))}\PYG{c+c1}{//接受函数，解释见上。}
+            \PYG{p}{\PYGZob{}}
+                \PYG{n}{ans}\PYG{o}{=}\PYG{n}{min}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,}\PYG{n}{newf}\PYG{p}{);}\PYG{c+c1}{//更新一下答案}
+                \PYG{k}{for} \PYG{p}{(}\PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}=}\PYG{n}{n}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{n}{b}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{o}{=}\PYG{n}{c}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}\PYG{c+c1}{//复制一下c数组}
+                \PYG{n}{oldf}\PYG{o}{=}\PYG{n}{newf}\PYG{p}{;}\PYG{c+c1}{//刚刚计算出的函数值变成旧的函数值}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZpc{}d}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{ans}\PYG{p}{);}
+    \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
