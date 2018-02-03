@@ -40,7 +40,7 @@
 
 那么我们该怎么办？dalao们思考两分钟，不然我们先想一想搜索的方法吧（如果秒掉了的话就看看下面的图）。
 
-\begin{center}\includegraphics[scale=0.8]{6081163_p0.jpg}\end{center}
+
 \newpage
 \begin{example}\rm{01}背包问题：有$n$个重量和价值分别为$w[i]$和$v[i]$的物品。从这些物品中挑出总重量不超过$W$的物品，求所有挑选方案中价值总和的最大值。\end{example}
 
@@ -140,51 +140,6 @@ for(int i = 0; i < N; ++i)
 \textbf{重要提示：}\textcolor{red}{\textbf{请特别注意此题的枚举顺序，由于$dp[i]$是由$dp[i-w[j]]$转移来的，为了避免后效性需要倒序枚举背包的容量，这也是压维优化DP的特征}}（但不是所有的压维优化DP都需要倒序枚举）。
 
 \note
-\section*{\textcolor{white}{?????}}
-\begin{quote}
-	\textcolor{white}{やがて\ruby{日}{ひ}が\ruby{過}{す}ぎ \ruby{年}{とし}が\ruby{過}{す}ぎ\\
-		光阴飞逝 岁月如梭}
-
-	\textcolor{white}{\ruby{古}{ふる}い\ruby{荷物}{にもつ}も ふえて\\
-		陈旧的负担 增加了}
-
-	\textcolor{white}{あなたが かわっても\\
-		你即使 自己改变}
-
-	\textcolor{white}{\ruby{失}{な}くしたくないものは\\
-		也不愿失去的事物}
-
-	\textcolor{white}{ワタシに あずけてね\\
-		就交由我 来保管吧}
-
-	\ \\
-
-	\textcolor{white}{\ruby{時}{とき}の\ruby{流}{なが}れも \ruby{傷}{きず}の\ruby{痛}{いた}みも\\
-		不论是时间的流逝 受伤的苦痛}
-
-	\textcolor{white}{\ruby{愛}{あい}の\ruby{深}{ふか}さも あなたの\ruby{声}{こえ}も\\
-		爱意的深切 还是你的话声}
-
-	\textcolor{white}{ワタシは\ruby{知}{し}らない だけど\ruby{歌}{うた}は\\
-		即使我全都一无所知 依然继续地}
-
-	\textcolor{white}{\ruby{歌}{うた}はうたえるわ だからきいて\\
-		尽我所能的歌唱 所以请好好倾听吧}
-
-	\textcolor{white}{もしもあなたが \ruby{望}{のぞ}むのなら\\
-		若是你如此 期望的话}
-
-	\textcolor{white}{\ruby{何}{なん}\ruby{度}{ど}でも \ruby{何}{なん}\ruby{度}{ど}だって\\
-		不论几次 不论多少次}
-
-	\textcolor{white}{かわらないわ あのときのまま\\
-		不会改变的 从那时以来不曾变过的}
-
-	\textcolor{white}{ハジメテノオトのまま...\\
-		那不变的初次歌声...}
-
-	\begin{flushright}\textcolor{white}{------「ハジメテノオト」}\end{flushright}
-\end{quote}
 
 \subsection{完全背包问题、多重背包问题与混合背包问题}
 这一节内容看起来会比较多，但是因为有了前面一节的基础，相信大家也能够很容易的掌握。
@@ -240,48 +195,7 @@ for(int i=0;i<N;i++)
 这三种问题是不是很简单呢？有不会的问题可以提问。
 \note
 
-\section*{\textcolor{white}{?????}}
-\begin{quote}
-	\textcolor{white}{\ruby{想}{おも}いよ\ruby{届}{とど}け　\ruby{君}{きみ}に\\
-		该怎么办才好…！ 思念啊请传达给你}
 
-	\ \par
-
-	\textcolor{white}{お\ruby{願}{ねが}い\ruby{時間}{じかん}を\ruby{止}{とめ}めて　\ruby{泣}{な}きそうなの\\
-		拜托时间请停下来 感觉快要哭出来了}
-
-	\textcolor{white}{でも\ruby{嬉}{うれ}しくて　\ruby{死}{し}んでしまうわ！\\
-		但是又好高兴 高兴到快要死掉了！}
-
-	\ \par
-
-	\textcolor{white}{メルト　\ruby{駅}{えき}に\ruby{着}{つ}いてしまう……\\
-		Melt　终究还是抵达了车站……}
-
-	\ \par
-
-	\textcolor{white}{もう\ruby{会}{あ}えない　\ruby{近}{ちか}くて　\ruby{遠}{とお}いよ　だから\\
-		再也见不到面了　那么的近 却又是那么的遥远　所以}
-
-	\ \par
-
-	\textcolor{white}{メルト　\ruby{手}{て}をつないで\ruby{歩}{ある}きたい！\\
-		Melt　想要手牵着手 一起前进！}
-
-	\textcolor{white}{もうバイバイしなくちゃいけないの？\\
-		已经是不得不说再见的时候了吗？}
-
-	\ \par
-
-	\textcolor{white}{\ruby{今}{いま}すぐ　わたしを\ruby{抱}{だ}きしめて！\\
-		现在马上 抱紧我！}
-
-	\ \par
-
-	\textcolor{white}{……なんてね\\
-		……只是想想而已}
-	\begin{flushright}\textcolor{white}{------メルト}\end{flushright}
-\end{quote}
 \newpage
 \subsection{二维背包问题与分组背包问题}
 \subsubsection{二维背包问题}
@@ -308,47 +222,7 @@ for(int i=0;i<N;i++)
 状态转移方程：$f[i]=\max\{f[i],f[i-w[i]]+v[i]\},i\in k_x.$
 有问题随时问。
 \note
-\section*{\textcolor{white}{?????}}
-\begin{quote}
-	\textcolor{white}{\ruby{悲}{かな}しみの\ruby{海}{うみ}に\ruby{沈}{しず}んだ\ruby{私}{わたし} \ruby{目}{め}を\ruby{開}{あ}けるのも\ruby{億劫}{おっくう}\\
-		沉入悲伤之海的我 就连想睁开眼也彷佛永劫}
 
-	\textcolor{white}{このままどこまでも\ruby{堕}{お}ちて\ruby{行}{ゆ}き \ruby{誰}{だれ}にも\ruby{見}{み}つけられないのかな\\
-		会就此沉沦下去 没人能够找到吗？}
-
-	\ \par
-
-	\textcolor{white}{どこへ\ruby{向}{む}かい、\ruby{何}{なに}をすれば? ふと\ruby{射}{さ}し\ruby{込}{こ}む\ruby{一筋}{ひとすじ}の\ruby{光}{ひかり}\\
-		该朝向哪里，何去何从？ 突然洒下的一丝光芒}
-
-	\textcolor{white}{\ruby{手}{て}を\ruby{伸}{の}ばせば\ruby{届}{とど}きそうだけど \ruby{波}{なみ}に\ruby{拐}{さら}われて\ruby{見}{み}{失}{うしな}った\\
-		虽然好像只要伸出手就能触及 却被海浪卷走失去踪影}
-
-	\ \par
-
-	\textcolor{white}{あれは\ruby{一体}{いったい}なんだったのかな あたたかくて\ruby{眩}{まぶ}しかったの\\
-		那究竟是什么呢 既温暖又炫目}
-
-	\textcolor{white}{\ruby{無}{む}{意}{い}{識}{しき}のカウンターイルミネーション\\
-		无意识的对抗照明\\
-		\ruby{嘘}{うそ}つきは\ruby{誰}{わだれ}?\\
-		说谎的到底是谁？}
-
-	\ \par
-
-	\textcolor{white}{\ruby{深海}{しんかい}\ruby{少}{しょう}\ruby{女}{じょ} まだまだ\ruby{沈}{しず}む\\
-		深海少女 仍在继续下沉}
-
-	\textcolor{white}{\ruby{暗闇}{くらやみ}の{彼方}{かなた}へ\ruby{閉}{と}じこもる\\
-	封闭在黑暗的彼端}
-
-	\textcolor{white}{\ruby{深海}{しんかい}\ruby{少}{しょう}\ruby{女}{じょ} だけど\ruby{知}{し}りたい\\
-		深海少女 但想要知道}
-
-	\textcolor{white}{\ruby{心惹}{こころひ}かれるあの\ruby{人}{ひと}を\ruby{見}{み}つけたから\\
-		只因找到了那令她倾心的人}
-	\begin{flushright}\textcolor{white}{------深海少女}\end{flushright}
-\end{quote}
 \newpage
 \subsection{有依赖的背包问题与泛化物品（选学）}
 以下内容为选学，掌握与否都不很重要。讲解以经典例题为主\sout{，不能光\\讲基础的东西不讲题啊}。
@@ -491,47 +365,6 @@ for(int i=0;i<N;i++)
 注意状态转移方程中加的部分是预处理出来的数组中对应的函数值。
 
 \note
-\section*{\textcolor{white}{?????}}
-\begin{quote}
-	\textcolor{white}{\ruby{何}{なに}も\ruby{伝}{つた}えないまま\\
-		分毫的心意都没传达出}
 
-	\textcolor{white}{さよならは\ruby{言}{い}えないよ\\
-		这样子的我说不出再见}
-
-	\ \par
-
-	\textcolor{white}{この\ruby{声}{こえ}　\ruby{枯}{か}れても\\
-		即使这份　歌声凋零}
-
-	\textcolor{white}{\ruby{消}{き}えない　メロディー\\
-		旋律依然　不会消失}
-
-	\ \par
-
-	\textcolor{white}{Last Night, Good Night\\
-		Last Night, Good Night}
-
-	\textcolor{white}{Last Night, Good Night\\
-		Last Night, Good Night}
-
-	\ \par
-
-	\textcolor{white}{いつかは　むかえる\\
-		等待着那　随时可能}
-
-	\textcolor{white}{\ruby{最後}{さいご}を　\ruby{想}{おも}うよ\\
-		会来临的　最后一刻}
-
-	\textcolor{white}{\ruby{夜空}{よそら}に　\ruby{願}{ねが}うの\\
-		向着夜空　寄予心愿}
-
-	\textcolor{white}{ときわの　\ruby{笑顔}{えがお}を\\
-		愿你永保　那份笑容}
-
-	\textcolor{white}{おやすみ\\
-		祝你好梦}
-	\begin{flushright}\textcolor{white}{------}\em{\textcolor{white}{``Last Night, Good Night"}}\end{flushright}
-\end{quote}
 
 \newpage

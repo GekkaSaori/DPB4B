@@ -129,7 +129,7 @@ std::lower_bound(first,last,val,comp);
 
 导弹拦截这道题目出自NOIp 1999，容易看出第一问是一个裸的LIS问题（最长不升子序列就是LIS的一个变形而已）。可以直接套上LIS的板子看看能不能拿到100分。
 
-\begin{center}\includegraphics[scale=0.80]{43749408_p0.jpg}\end{center}
+
 \note
 \subsection{最长公共子序列---LCS}
 \subsubsection{介绍与实现}
@@ -197,7 +197,7 @@ std::lower_bound(first,last,val,comp);
 对于不需要输出LCS的问题，还可以使用滚动数组优化一下f数组的空间占用。因为每次转移只用到了f数组当前的一行以及前一行，所以只需要保留这两行数据即可。但是如果需要计算LCS的元素，就不能使用滚动数组优化（思考一下为什么）。
 
 例题的话，可以参考一下洛谷P1439 的前50\%，至于后面的优化，建议参考一下题解，因为严格意义上这个优化意义不是很大，常数也很大，不是那么实用。
-\begin{center}\includegraphics[scale=0.08]{21804232_p0.jpg}\end{center}
+
 \note
 \section*{\textcolor{white}{?????}}
 \begin{quote}
