@@ -1,0 +1,415 @@
+\section{典型题目与难题选讲}
+	\subsection{典型题目}
+	这里给出几道基础的DP题目，大家尽情AK吧！
+	\begin{itemize}
+		\item{\href{https://www.luogu.org/problem/show?pid=1216}{[USACO1.5]数字三角形 Number Triangles}---例题}
+		\item{\href{https://www.luogu.org/problem/show?pid=1508}{Likecloud-吃、吃、吃}---数字三角形}
+		\item{\href{https://www.luogu.org/problem/show?pid=1064}{金明的预算方案}---例题}
+		\item{\href{https://www.luogu.org/problem/show?pid=1002}{过河卒}---模拟式DP}
+		\item{\href{https://www.luogu.org/problem/show?pid=1115}{最大子段和}--- DP或者贪心}
+		\item{\href{https://www.luogu.org/problem/show?pid=1091}{合唱队形}---最长上升子序列+最长下降子序列}
+		\item{\href{https://www.luogu.org/problem/show?pid=2782}{友好城市}---最长上升子序列}
+		\item{\href{https://www.luogu.org/problem/show?pid=1020}{导弹拦截}---最长不下降子序列}
+		\item{\href{https://www.luogu.org/problem/show?pid=1108}{低价购买}---最长下降子序列+统计}
+		\item{\href{https://www.luogu.org/problem/show?pid=2285}{[HNOI2004]打鼹鼠}---最长上升子序列}
+		\item{\href{https://www.luogu.org/problem/show?pid=2871}{[USACO07DEC]手链Charm Bracelet}---01背包模板题}
+		\item{\href{https://www.luogu.org/problem/show?pid=1048}{采药}---01背包模板题}
+		\item{\href{https://www.luogu.org/problem/show?pid=1060}{开心的金明}---01背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=2639}{[USACO09OCT]Bessie的体重问题Bessie's We...}---01背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1926}{小书童——刷题大军}---01背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1049}{装箱问题}---01背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1616}{疯狂的采药}---完全背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1757}{通天之分组背包}---分组背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1507}{NASA的食物计划}---二维背包}
+		\item{\href{https://www.luogu.org/problem/show?pid=1164}{小A点菜}---背包问题的变体}
+		\item{\href{https://www.luogu.org/problem/show?pid=1156}{垃圾陷阱}---类背包DP}
+		\item{\href{https://www.luogu.org/problem/show?pid=1280}{尼克的任务}---考虑枚举方向}
+		\item{\href{https://www.luogu.org/problem/show?pid=1103}{书本整理}---转化}
+		\item{\href{https://www.luogu.org/problem/show?pid=1725}{琪露诺}---DP的优化}
+		\item{\href{https://www.luogu.org/problem/show?pid=2822}{组合数问题}---杨辉三角+前缀和}
+	\end{itemize}
+
+	题目有些多，但是还是最好一一刷完。最后4道题以及每个类型的最后一道题稍微有些难度。
+
+	想要提升能力的话，可以尝试一下下面这些题目：
+	\begin{itemize}
+		\item{\href{https://www.luogu.org/problem/show?pid=1004}{方格取数}---双线程DP}
+		\item{\href{https://www.luogu.org/problem/show?pid=1006}{传纸条}---双线程DP}
+		\item{\href{https://www.luogu.org/problem/show?pid=1541}{乌龟棋}---较高维度的DP}
+		\item{\href{https://www.luogu.org/problem/show?pid=1373}{小a和uim之大逃离}---较复杂的DP}
+	\end{itemize}
+
+	以上差不多有30道题的样子了。希望大家能抽时间做一下。
+
+	\begin{center}\includegraphics[scale=0.25]{33237093_p0.jpg}\end{center}
+
+	\newpage
+	\subsection{难题选讲}
+	\subsubsection{组合数问题---数论/数学，DP，前缀和优化}
+	\begin{example} 组合数问题\\
+		\textbf{【问题描述】}
+
+		组合数$C_n^m$表示的是从n个物品中选出m个物品的方案数。举个例子，从$\rm (1,2,3)$三个物品中选择两个物品可以有$\rm (1,2),(1,3),(2,3)$这三种选择方法。根据组合数的定义，我们可以给出计算组合数的一般公式：
+
+		\begin{equation*}C_n^m=\frac{n!}{m!(n - m)!}\end{equation*}
+
+		其中$n!=1\times 2\times\cdots\times n$。
+
+		小葱想知道如果给定n,m和k，对于所有的$0\leq i\leq n$，$0\leq j\leq\min(i,m)$有多少对$\rm (i,j)$满足$C_i^j$是k的倍数。\\
+		\textbf{【输入输出格式】}\\
+		\textbf{【输入格式】}
+
+		从文件 problem.in 中读入数据。
+
+		第一行有两个整数$t,k$，其中$t$代表该测试点总共有多少组测试数据，$k$的意义见 【问题描述】。
+
+		接下来$t$行每行两个整数$n, m$，其中$n, m$的意义见【问题描述】。 \\
+		\textbf{【输出格式】}
+
+		输出到文件problem.out中。
+
+		t行，每行一个整数代表答案。\\
+		\textbf{【输入输出样例】}\\
+		\textbf{【输入样例1】}
+		\begin{minted}{text}
+1 2
+3 3
+\end{minted}
+		\textbf{【输出样例1】}
+		\begin{minted}{text}
+1
+\end{minted}
+		\textbf{【输入样例2】}
+		\begin{minted}{text}
+2 5
+4 5
+6 7
+\end{minted}
+		\textbf{【输出样例2】}
+		\begin{minted}{text}
+0
+7
+\end{minted}
+		\textbf{【说明】}\\
+		\textbf{【样例$1$说明】}
+
+		在所有可能的情况中，只有$C_2^1 = 2$是$2$的倍数。\\
+		\textbf{【子任务】}
+
+		子任务会给出部分测试数据的特点。如果你在解决题目中遇到了困难，可以尝试只解决一部分测试数据。
+
+		每个测试点的数据规模及特点如下表：
+		\begin{center}
+			\begin{tabular}{c|c|c|c|c}
+				\Xhline{1.2pt}
+				测试点 & $n$                          & $m$                          & $k$   & $t$         \\
+				\Xhline{1.2pt}
+				$1$    & \multirow{2}{*}{$\leq 3$}    & \multirow{2}{*}{$\leq 3$}    & $=2$  & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$2$    &                              &                              & $=3$  & $\leq 10^4$ \\
+				\hline
+				$3$    & \multirow{2}{*}{$\leq 7$}    & \multirow{2}{*}{$\leq 7$}    & $=4$  & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$4$    &                              &                              & $=5$  & $\leq 10^4$ \\
+				\hline
+				$5$    & \multirow{2}{*}{$\leq 10$}   & \multirow{2}{*}{$\leq 10$}   & $=6$  & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$6$    &                              &                              & $=7$  & $\leq 10^4$ \\
+				\hline
+				$7$    & \multirow{2}{*}{$\leq 20$}   & \multirow{2}{*}{$\leq 100$}  & $=8$  & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$8$    &                              &                              & $=9$  & $\leq 10^4$ \\
+				\hline
+				$9$    & \multirow{2}{*}{$\leq 25$}   & \multirow{2}{*}{$\leq 2000$} & $=10$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$10$   &                              &                              & $=11$ & $\leq 10^4$ \\
+				\hline
+				$11$   & \multirow{2}{*}{$\leq 60$}   & \multirow{2}{*}{$\leq 20$}   & $=12$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$12$   &                              &                              & $=13$ & $\leq 10^4$ \\
+				\hline
+				$13$   & \multirow{4}{*}{$\leq 100$}  & \multirow{2}{*}{$\leq 25$}   & $=14$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$14$   &                              &                              & $=15$ & $\leq 10^4$ \\
+				\cline{1-1}\cline{3-3}\cline{4-5}
+				$15$   &                              & \multirow{2}{*}{$\leq 60$}   & $=16$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$16$   &                              &                              & $=17$ & $\leq 10^4$ \\
+				\hline
+				$17$   & \multirow{4}{*}{$\leq 2000$} & \multirow{2}{*}{$\leq 100$}  & $=18$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$18$   &                              &                              & $=19$ & $\leq 10^4$ \\
+				\cline{1-1}\cline{3-3}\cline{4-5}
+				$19$   &                              & \multirow{2}{*}{$\leq 2000$} & $=20$ & $=1$        \\
+				\cline{1-1}\cline{4-5}
+				$20$   &                              &                              & $=21$ & $\leq 10^4$ \\
+				\Xhline{1.2pt}
+			\end{tabular}
+		\end{center}
+	\end{example}
+
+	这是一道数论题，暴力分也很多（50分）。
+
+	我们可以先打个表（毕竟数论上来先打表），看看前若干项的值。
+
+	手推一下样例二：
+	\begin{equation*}
+		\begin{matrix}
+			C^0_0                                         \\
+			C^0_1 & C^1_1                                 \\
+			C^0_2 & C^1_2 & C^2_2                         \\
+			C^0_3 & C^1_3 & C^2_3 & C^3_3                 \\
+			C^0_4 & C^1_4 & C^2_4 & C^3_4 & C^4_4         \\
+			C^0_5 & C^1_5 & C^2_5 & C^3_5 & C^4_5 & C^5_5
+		\end{matrix}
+	\end{equation*}
+
+	套套公式，看看在数组中的存储（不符合组合数的定义处设为$-1$）：
+	\begin{equation*}
+		\begin{matrix}
+			-1 & 0 & 0  & 0  & 0  & 0 & 0 \\
+			-1 & 1 & 0  & 0  & 0  & 0 & 0 \\
+			-1 & 2 & 1  & 0  & 0  & 0 & 0 \\
+			-1 & 3 & 3  & 1  & 0  & 0 & 0 \\
+			-1 & 4 & 6  & 4  & 1  & 0 & 0 \\
+			-1 & 5 & 10 & 10 & 5  & 1 & 0 \\
+			-1 & 6 & 15 & 20 & 15 & 6 & 1
+		\end{matrix}
+	\end{equation*}
+
+	容易看出这是一个杨辉三角。
+
+	建立状态转移方程。$O(n^2)$求出杨辉三角。然后数组存储杨辉三角的对应项对k取模后的值即可。
+
+	再开个数组，统计一下数组中有多少个0就行了。
+
+	然后写一个前缀和优化一下，问题解决。
+
+	时间复杂度$O(n^2)$。
+
+	\note
+
+	\subsubsection{换教室---期望DP}
+	期望DP是最近几年新加入NOIp考纲的内容，于NOIp 2016试水，以后几年可能会比较常考。在这里只介绍最基础的一道题，来源是NOIp 2016 Day1 T3.
+
+	\begin{example} 换教室\\
+		\textbf{题目描述}
+
+		对于刚上大学的牛牛来说，他面临的第一个问题是如何根据实际情况申请合适的课程。
+
+		在可以选择的课程中，有 $2n$ 节课程安排在 $n$ 个时间段上。在第 $i$（$1 \leq i \leq n$）个时间段上，两节内容相同的课程同时在不同的地点进行，其中，牛牛预先被安排在教室 $c_i$ 上课，而另一节课程在教室 $d_i$ 进行。
+
+		在不提交任何申请的情况下，学生们需要按时间段的顺序依次完成所有的 $n$ 节安排好的课程。如果学生想更换第 $i$ 节课程的教室，则需要提出申请。若申请通过，学生就可以在第 $i$ 个时间段去教室 $d_i$ 上课，否则仍然在教室 $c_i$ 上课。
+
+		由于更换教室的需求太多，申请不一定能获得通过。通过计算，牛牛发现申请更换第 $i$ 节课程的教室时，申请被通过的概率是一个已知的实数 $k_i$，并且对于不同课程的申请，被通过的概率是互相独立的。
+
+		学校规定，所有的申请只能在学期开始前一次性提交，并且每个人只能选择至多 $m$ 节课程进行申请。这意味着牛牛必须一次性决定是否申请更换每节课的教室，而不能根据某些课程的申请结果来决定其他课程是否申请；牛牛可以申请自己最希望更换教室的 $m$ 门课程，也可以不用完这 $m$ 个申请的机会，甚至可以一门课程都不申请。
+
+		因为不同的课程可能会被安排在不同的教室进行，所以牛牛需要利用课间时间从一间教室赶到另一间教室。
+
+		牛牛所在的大学有 $v$ 个教室，有 $e$ 条道路。每条道路连接两间教室，并且是可以双向通行的。由于道路的长度和拥堵程度不同，通过不同的道路耗费的体力可能会有所不同。 当第 $i$（$1 \leq i \leq n-1$）节课结束后，牛牛就会从这节课的教室出发，选择一条耗费体力最少的路径前往下一节课的教室。
+
+		现在牛牛想知道，申请哪几门课程可以使他因在教室间移动耗费的体力值的总和的期望值最小，请你帮他求出这个最小值。\\
+		\textbf{输入输出格式}\\
+		\textbf{输入格式}
+
+		第一行四个整数 $n,m,v,e$。$n$ 表示这个学期内的时间段的数量；$m$ 表示牛牛最多可以申请更换多少节课程的教室；$v$ 表示牛牛学校里教室的数量；$e$表示牛牛的学校里道路的数量。
+
+		第二行 $n$ 个正整数，第 $i$（$1 \leq i \leq n$）个正整数表示 $c_i$，即第 $i$ 个时间段牛牛被安排上课的教室；保证 $1 \le c_i \le v$。
+
+		第三行 $n$ 个正整数，第 $i$（$1 \leq i \leq n$）个正整数表示 $d_i$，即第 $i$ 个时间段另一间上同样课程的教室；保证 $1 \le d_i \le v$。
+
+		第四行 $n$ 个实数，第 $i$（$1 \leq i \leq n$）个实数表示 $k_i$，即牛牛申请在第 $i$ 个时间段更换教室获得通过的概率。保证 $0 \le k_i \le 1$。
+
+		接下来 $e$ 行，每行三个正整数 $a_j, b_j, w_j$，表示有一条双向道路连接教室 $a_j, b_j$，通过这条道路需要耗费的体力值是 $w_j$；保证 $1 \le a_j, b_j \le v$， $1 \le w_j \le 100$。
+
+		保证 $1 \leq n \leq 2000$，$0 \leq m \leq 2000$，$1 \leq v \leq 300$，$0 \leq e \leq 90000$。
+
+		保证通过学校里的道路，从任何一间教室出发，都能到达其他所有的教室。
+
+		保证输入的实数最多包含 $3$ 位小数。\\
+		\textbf{输出格式}
+
+		输出一行，包含一个实数，四舍五入精确到小数点后恰好$2$位，表示答案。你的输出必须和标准输出完全一样才算正确。
+
+		测试数据保证四舍五入后的答案和准确答案的差的绝对值不大于 $4 \times 10^{-3}$。（如果你不知道什么是浮点误差，这段话可以理解为：对于大多数的算法，你可以正常地使用浮点数类型而不用对它进行特殊的处理）\ \\
+		\textbf{输入输出样例}\\
+		\textbf{输入样例}
+		\begin{minted}{text}
+3 2 3 3
+2 1 2
+1 2 1
+0.8 0.2 0.5 
+1 2 5
+1 3 3
+2 3 1
+\end{minted}
+		\textbf{输出样例}
+		\begin{minted}{text}
+2.80
+\end{minted}
+		\textbf{说明}\\
+		【样例说明】
+
+		所有可行的申请方案和期望收益如下表:
+		\begin{center}
+			\begin{tabular}{c|c|c|c}
+				\Xhline{1.2pt}
+				申请通过的时间段 & 出现的概率 & 耗费的体力值 & 耗费的体力值的期望      \\
+				\Xhline{1.2pt}
+				无               & $1.0$      & $8$          & $8.0$                   \\
+				\hline
+				$1$              & $0.8$      & $4$          & \multirow{2}{*}{$4.8$}  \\
+				\cline{1-3}
+				无               & $0.2$      & $8$          &                         \\
+				\hline
+				$2$              & $0.2$      & $0$          & \multirow{2}{*}{$6.4$}  \\
+				\cline{1-3}
+				无               & $0.8$      & $8$          &                         \\
+				\hline
+				$3$              & $0.5$      & $4$          & \multirow{2}{*}{$6.0$}  \\
+				\cline{1-3}
+				无               & $0.5$      & $8$          &                         \\
+				\hline
+				$1、2$           & $0.16$     & $4$          & \multirow{4}{*}{$4.48$} \\
+				\cline{1-3}
+				$1$              & $0.64$     & $4$          &                         \\
+				\cline{1-3}
+				$2$              & $0.04$     & $0$          &                         \\
+				\cline{1-3}
+				无               & $0.16$     & $8$          &                         \\
+				\hline
+				$1、3$           & $0.4$      & $0$          & \multirow{4}{*}{$2.8$}  \\
+				\cline{1-3}
+				$1$              & $0.4$      & $4$          &                         \\
+				\cline{1-3}
+				$3$              & $0.1$      & $4$          &                         \\
+				\cline{1-3}
+				无               & $0.1$      & $8$          &                         \\
+				\hline
+				$2、3$           & $0.1$      & $4$          & \multirow{4}{*}{$5.2$}  \\
+				\cline{1-3}
+				$2$              & $0.1$      & $0$          &                         \\
+				\cline{1-3}
+				$3$              & $0.4$      & $4$          &                         \\
+				\cline{1-3}
+				无               & $0.4$      & $8$          &                         \\
+				\Xhline{1.2pt}
+			\end{tabular}
+		\end{center}
+		【提示】
+
+		$1.$道路中可能会有多条双向道路连接相同的两间教室。 也有可能有道路两端连接
+		的是同一间教室。
+
+		$2.$请注意区分n,m,v,e的意义, n不是教室的数量, m不是道路的数量。
+
+		特殊性质$1$:图上任意两点 $a_i$, $b_i$, $a_i\neq b_i$间,存在一条耗费体力最少的路径只包含一条道路。
+
+		特殊性质$2$:对于所有的 $1\leq i\leq n$， $k_i=1$ 。\\
+		【子任务】
+
+		\begin{center}
+			\begin{tabular}{c|c|c|c|c|c}
+				\Xhline{1.2pt}
+				测试点 & $n$                          & $m$                          & $v$                         & 特殊性质1                & 特殊性质2                \\
+				\Xhline{1.2pt}
+				$1$    & $\leq 1$                     & $\leq 1$                     & $\leq 300$                  & \multirow{4}{*}{\times}  & \multirow{4}{*}{\times}  \\
+				\cline{1-4}
+				$2$    & \multirow{3}{*}{$\leq 2$}    & $\leq 0$                     & $\leq 20$                   &                          &                          \\
+				\cline{1-1}
+				$3$    &                              & $\leq 1$                     & $\leq 100$                  &                          &                          \\
+				\cline{1-1}\cline{3-4}
+				$4$    &                              & $\leq 2$                     & $\leq 300$                  &                          &                          \\
+				\hline
+				$5$    & \multirow{3}{*}{$\leq 3$}    & $\leq 0$                     & $\leq 20$                   & \multirow{2}{*}{$\surd$} & $\surd$                  \\
+				\cline{1-1}\cline{3-4}\cline{6-6}
+				$6$    &                              & $\leq 1$                     & $\leq 100$                  &                          & \multirow{2}{*}{\times}  \\
+				\cline{1-1}\cline{3-5}
+				$7$    &                              & $\leq 2$                     & \multirow{2}{*}{$\leq 300$} & \times                   &                          \\
+				\cline{1-3}\cline{5-6}
+				$8$    & \multirow{4}{*}{$\leq 10$}   & $\leq 0$                     &                             & \multirow{2}{*}{$\surd$} & $\surd$                  \\
+				\cline{1-1}\cline{3-4}\cline{6-6}
+				$9$    &                              & $\leq 1$                     & $\leq 20$                   &                          & \multirow{2}{*}{\times}  \\
+				\cline{1-1}\cline{3-5}
+				$10$   &                              & $\leq 2$                     & $\leq 100$                  & \multirow{2}{*}{\times}  &                          \\
+				\cline{1-1}\cline{3-4}\cline{6-6}
+				$11$   &                              & $\leq 10$                    & $\leq 300$                  &                          & $\surd$                  \\
+				\hline
+				$12$   & \multirow{4}{*}{$\leq 20$}   & $\leq 0$                     & $\leq 20$                   & $\surd$                  & \multirow{3}{*}{\times}  \\
+				\cline{1-1}\cline{3-5}
+				$13$   &                              & $\leq 1$                     & $\leq 100$                  & \times                   &                          \\
+				\cline{1-1}\cline{3-5}
+				$14$   &                              & $\leq 2$                     & \multirow{2}{*}{$\leq 300$} & $\surd$                                             \\
+				\cline{1-1}\cline{3-3}\cline{5-6}
+				$15$   &                              & $\leq 20$                    &                             & \multirow{3}{*}{\times}  & $\surd$                  \\
+				\cline{1-4}\cline{6-6}
+				$16$   & \multirow{4}{*}{$\leq 300$}  & $\leq 0$                     & $\leq 20$                   &                          & \multirow{2}{*}{\times}  \\
+				\cline{1-1}\cline{3-4}
+				$17$   &                              & $\leq 1$                     & $\leq 100$                  &                                                     \\
+				\cline{1-1}\cline{3-6}
+				$18$   &                              & $\leq 2$                     & \multirow{2}{*}{$\leq 300$} & $\surd$                  & \multirow{2}{*}{$\surd$} \\
+				\cline{1-1}\cline{3-3}\cline{5-5}
+				$19$   &                              & $\leq 300$                   &                             & \multirow{7}{*}{\times}  &                          \\
+				\cline{1-4}\cline{6-6}
+				$20$   & \multirow{6}{*}{$\leq 2000$} & $\leq 0$                     & \multirow{2}{*}{$\leq 20$}  &                          & \multirow{6}{*}{\times}  \\
+				\cline{1-1}\cline{3-3}
+				$21$   &                              & $\leq 1$                     &                             &                          &                          \\
+				\cline{1-1}\cline{3-4}
+				$22$   &                              & $\leq 2$                     & \multirow{2}{*}{$\leq 100$} &                                                     \\
+				\cline{1-1}\cline{3-3}
+				$23$   &                              & \multirow{3}{*}{$\leq 2000$} &                             &                          &                          \\
+				\cline{1-1}\cline{4-4}
+				$24$   &                              &                              & \multirow{2}{*}{$\leq 300$} &                                                     \\
+				\cline{1-1}
+				$25$   &                              &                              &                             &                                                     \\
+				\Xhline{1.2pt}
+			\end{tabular}
+		\end{center}
+	\end{example}
+
+	题意：给出一幅 v 个点的无向图，表示教室及其连边。有 n 个时刻，每个时刻正常要到教室 c[i] 上课，如果该时刻有申请更换，则到教室 d[i] 上课。你只能在一切开始之前提交申请，且最多申请换 m 个时刻。第 i 个时刻申请成功的概率为 k[i]。求移动路程的期望最小值。$n,m\leq 2000, v\leq 300$。
+
+	首先您得知道期望是什么，否则这个题期望得分就只有特殊性质2的部分分35分了。
+
+	\begin{definition}[期望]离散型随机变量的一切可能的取值xi与对应的概率Pi(=xi)之积的和称为该离散型随机变量的数学期望(设级数绝对收敛)，记为E(x)。
+	\end{definition}
+
+	所以可以得到期望的计算公式：
+	\begin{equation*}E\xi=\sum_{i=1}^n x_i p_i\end{equation*}
+
+	那么该怎么做呢？思路显而易见，就是先求出点与点之间的最短路，然后套一下公式求出期望，至于方案什么的就是很基础的DP了，直接写状态转移方程就行了。第一眼先看看数据范围，$v\leq 300$？Floyd多源最短路？然后这张图就废了。就不写SPFA，辣鸡SPFA，毁我青春，耗我时间，还会TLE（最差$O(300\times v^3 = v^4=TLE=gg)$）。
+
+	然后就是推状态转移方程了。设状态f[i][j]表示在第i个时间段申请换j次教室所耗费的体力值总和的期望的最小值，那么这一个状态具有两个子状态：申请成功和申请失败，这两个子状态可以加上一维，原来所求的值就是f[i][j][0/1]中的较小值。根据期望的计算公式容易得到以下状态转移方程：
+
+$f[i][j][0]=\min(f[i-1][j][0]+a[c[i-1]][c[i]],f[i-1][j][1]+a[c[i-1]][c[i]]*(1.0-k[i-1])+a[d[i-1]][c[i]]*k[i-1]); $
+
+$f[i][j][1]=\min(f[i-1][j-1][0]+a[c[i-1]][c[i]]*(1.0-k[i])+a[c[i-1]][d[i]]*k[i],f[i-1][j-1][1]+a[c[i-1]][c[i]]*(1.0-k[i])*(1.0-k[i-1])+a[d[i-1]][c[i]]*k[i-1]*(1.0-k[i])+a[c[i-1]][d[i]]*(1.0-k[i-1])*(k[i])+a[d[i-1]][d[i]]*k[i-1]*k[i]);$
+
+然后在f[n][0...m]中取一个最小值作为答案即可。
+
+那么，这节课就到这里了。谢谢大家。
+
+事实上，动态规划还有很多其他的类型，限于时间与我的姿势水平，今天就不展开讲解了。那么以后再说？
+
+\note
+
+\begin{center}\includegraphics[scale=0.65]{61438972_p0.jpg}\end{center}
+\begin{quote}
+	\textcolor{white}{ありがとう。そうして、さようなら。}
+
+	\textcolor{white}{谢谢您。然后，再见了。}
+	\begin{flushright}\textcolor{white}{------「初音ミクの消失」}\end{flushright}
+\end{quote}
+\begin{flushright}
+	2017年10月 第一版\\
+	2017年11月 第二版\\
+	2017年11月15日 修订版\\
+	2017年11月29日 增订版\\
+	2017年12月10日 状压DP\\
+	2017年12月13日 树形DP\\
+	2018年1月 序列型DP，修正语法错误\\
+	2018年1月 数位DP\\
+\end{flushright}
+\begin{center}\textcolor{red}{\huge{\textbf{TODO: add more questions.}}}\end{center}
+\end{document}

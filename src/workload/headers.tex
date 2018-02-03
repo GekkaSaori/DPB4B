@@ -1,0 +1,84 @@
+%HEADER:
+\documentclass{article}
+\usepackage[UTF8]{ctex}%Chinese supporting
+\usepackage{xcolor}%colors.
+\usepackage{amsmath}%math fonts
+\usepackage{amssymb}%math symbols
+\usepackage{luatexja-ruby}%nihon kanji +rubi+
+\usepackage[normalem]{ulem}%improved underlines
+\usepackage{graphicx}%pictures
+\usepackage[colorlinks,linkcolor=red]{hyperref}%hyperlinks
+\usepackage{multirow}%form
+\usepackage{multicol}%form
+\usepackage{makecell}%form
+\usepackage{minted}%code environment
+\usepackage[amsmath,thmmarks]{ntheorem}%theorem environment
+\usepackage{datetime2}
+
+%DEFINE VERSION:
+
+
+%Limitation:
+% There MUST be a space after Proofs!!!
+% Compile 3 Times Needed!!!
+% Define fonts for nihon characters, and change the fonts for them.
+
+% NEW FUNCTION DEFINATION:
+\newcommand{\DeclareCJKFont}[2]{\setCJKfamilyfont{#1}{#2}}
+% Argument #1: ShortName, Argument #2: FontName;
+\newcommand{\CreateShortcutForCJKFont}[2]{\newcommand*{#1}[1]{{\CJKfamily{#2}##1}}}
+% Argument #1: CommandName, Argument #2: ShortName;
+% Example:
+% 1. \DeclareCJKFont{stsong}{SimSun} SimSun was declared as stsong.
+% 2. \CreateShortcut{\songtizi}{stsong} Use \songtizi{...} to typeset words in SimSun.
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+% Define Shortcut for \multirow command.
+
+% VERSION CONTROL:
+% USE `ver.lua' script to print version.
+\newcommand{\ver}{\directlua{dofile('./ver/ver.lua')}\alpha}
+% DEFINE \bumprevsi TO BUMP THE REVISION VERSION:
+\newcommand{\bumprevis}{\directlua{dofile('./ver/bumprevis.lua')}}
+\newcommand{\bumpminor}{\directlua{dofile('./ver/bumpminor.lua')}}
+\newcommand{\bumpmajor}{\directlua{dofile('./ver/bumpmajor.lua')}}
+
+% REDEFINE paragraph & subparagraph ENVIRONMENT:
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+{3.25ex \@plus1ex \@minus.2ex}%
+{1.5ex \@plus.2ex}%
+{\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+{3.25ex \@plus1ex \@minus.2ex}%
+{1.5ex \@plus.2ex}%
+{\normalfont\normalsize\bfseries}}
+\makeatother
+
+% NEW THEOREM ENVIRONMENTS DEFINATION:
+\newtheorem{example}{例题}[subsection]
+\newtheorem{definition}{定义}[subsection]
+\newtheorem{thm}{定理}[subsection]
+\theoremstyle{nonumberplain}
+\theoremseparator{ }
+\theoremheaderfont{\bf}
+\theorembodyfont{\normalfont}
+\theoremsymbol{\rule{1ex}{1ex}}
+\newtheorem{Proof}{证明}
+
+% NOTES:
+\newcommand{\note}{\ \par
+	\subsection*{课堂笔记\\\tiny{Note on the text}}
+	\newpage}
+
+% PRESETs for minted, Contents, CTeX, picutures folders:
+\setminted[C++]{autogobble,breaklines,frame=lines,fontsize=\footnotesize,mathescape}
+\setminted[text]
+{autogobble,breaklines,frame=single,fontsize=\footnotesize,mathescape}
+\ctexset{punct={kaiming},linestretch={2}}
+\graphicspath{{./pictures/}}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% FONTS DECLARATION:
+
+%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{index}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{sumw}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{sumv}\PYG{p}{)}\PYG{c+c1}{//index：数组下标，sumw：当前情况的物品体积，sumv：当前情况的物品价值}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{index}\PYG{o}{\PYGZgt{}}\PYG{n}{n}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{sumw}\PYG{o}{\PYGZlt{}=}\PYG{n}{T}\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{n}{sumv}\PYG{o}{\PYGZgt{}}\PYG{n}{maxvalue}\PYG{p}{)}
+            \PYG{n}{maxvalue}\PYG{o}{=}\PYG{n}{sumv}\PYG{p}{;}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{index}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{sumw}\PYG{o}{+}\PYG{n}{w}\PYG{p}{[}\PYG{n}{index}\PYG{p}{],}\PYG{n}{sumv}\PYG{o}{+}\PYG{n}{v}\PYG{p}{[}\PYG{n}{index}\PYG{p}{]);}\PYG{c+c1}{//选}
+    \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{index}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{sumw}\PYG{p}{,}\PYG{n}{sumv}\PYG{p}{);}\PYG{c+c1}{//不选}
+\end{Verbatim}

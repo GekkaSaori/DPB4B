@@ -1,0 +1,107 @@
+\section{动态规划提高------棋盘型DP与区间型DP}
+让我们再来看看稍微难一些的DP，这一部分先初步了解一下就行了，只要会了DP的思想，几乎所有的DP问题都能解决。
+
+\subsection{棋盘型DP}
+\begin{example} Likecloud-吃、吃、吃\\
+	\textbf{题目背景}
+
+	问世间，青春期为何物？
+
+	答曰：“甲亢，甲亢，再甲亢；挨饿，挨饿，再挨饿！”\\
+	\textbf{题目描述}
+
+	正处在某一特定时期之中的李大水牛由于消化系统比较发达，最近一直处在饥饿的状态中。某日上课，正当他饿得头昏眼花之时，眼前突然闪现出了一个$n\times m$($n \and m\leq 200$)的矩型的巨型大餐桌，而自己正处在这个大餐桌的一侧的中点下边。餐桌被划分为了n*m个小方格，每一个方格中都有一个圆形的巨型大餐盘，上面盛满了令李大水牛朝思暮想的食物。李大水牛已将餐桌上所有的食物按其所能提供的能量打了分（有些是负的，因为吃了要拉肚子），他决定从自己所处的位置吃到餐桌的另一侧，但他吃东西有一个习惯——只吃自己前方或左前方或右前方的盘中的食物。
+
+	由于李大水牛已饿得不想动脑了，而他又想获得最大的能量，因此，他将这个问题交给了你。
+
+	每组数据的出发点都是最后一行的中间位置的下方！
+	\ \\
+	\textbf{输入输出格式}\\
+	\textbf{输入格式：}
+
+	第一行为m n.(n为奇数)，李大水牛一开始在最后一行的中间的下方，接下来为$m\times n$的数字矩阵。
+
+	共有m行,每行n个数字，数字间用空格隔开，代表该格子上的盘中的食物所能提供的能量。数字全是整数。\\
+	\textbf{输出格式：}
+
+	一个数,为你所找出的最大能量值。\\
+	\textbf{输入输出样例}\\
+	\textbf{输入样例}\ \\\ \\
+	\begin{minted}{text}
+6 7
+16 4 3 12 6 0 3
+4 -5 6 7 0 0 2
+6 0 -1 -2 3 6 8
+5 3 4 0 0 -2 7
+-1 7 4 0 7 -5 6
+0 -1 3 4 12 4 2
+\end{minted}
+	\textbf{输出样例}
+	\begin{minted}{text}
+41
+\end{minted}
+\end{example}
+
+棋盘型DP大概就是给你一个棋盘，有一个人从某一个点出发，要求走到某一个点的什么东西。
+
+针对这个题目，只需要设计出状态和方程就可以了。这个题目非常容易？设dp[i][j]表示当前吃到的格子能获得的最大能量，每一个格子都是由其左上方、正上方和右上方的格子转移而来。然后就可以轻易的得到状态转移方程：
+\begin{equation*}f[i][j] = \max\{\max\{f[i-1][j-1],f[i-1][j]\},f[i-1][j+1]\} + map[i][j]\end{equation*}
+
+这就完了。
+\subsection{区间型DP}
+\begin{example}{[USACO06FEB] Treats for the Cows 奶牛零食}\\
+	\textbf{题目描述}
+
+	FJ has purchased N (1 \leq N \leq 2000) yummy treats for the cows who get money for giving vast amounts of milk. FJ sells one treat per day and wants to maximize the money he receives over a given period time.
+
+	The treats are interesting for many reasons:The treats are numbered 1..N and stored sequentially in single file in a long box that is open at both ends. On any day, FJ can retrieve one treat from either end of his stash of treats.Like fine wines and delicious cheeses, the treats improve with age and command greater prices.The treats are not uniform: some are better and have higher intrinsic value. Treat i has value v(i) (1 \leq v(i) \leq 1000).Cows pay more for treats that have aged longer: a cow will pay v(i)*a for a treat of age a.Given the values v(i) of each of the treats lined up in order of the index i in their box, what is the greatest value FJ can receive for them if he orders their sale optimally?
+
+	The first treat is sold on day 1 and has age a=1. Each subsequent day increases the age by 1.
+
+	约翰经常给产奶量高的奶牛发特殊津贴，于是很快奶牛们拥有了大笔不知该怎么花的钱．为此，约翰购置了N(1\leq N\leq 2000)份美味的零食来卖给奶牛们．每天约翰售出一份零食．当然约翰希望这些零食全部售出后能得到最大的收益．这些零食有以下这些有趣的特性：
+
+	\begin{itemize}
+		\item{零食按照$1\cdots N$编号，它们被排成一列放在一个很长的盒子里．盒子的两端都有开口，约翰每天可以从盒子的任一端取出最外面的一个。}
+		\item{与美酒与好吃的奶酪相似，这些零食储存得越久就越好吃．当然，这样约翰就可以把它们卖出更高的价钱。}
+		\item{每份零食的初始价值不一定相同．约翰进货时，第i份零食的初始价值为Vi($1\leq Vi\leq 1000$)。}
+		\item{第i份零食如果在被买进后的第a天出售，则它的售价是$vi\times a$．}
+	\end{itemize}
+	Vi的是从盒子顶端往下的第i份零食的初始价值．约翰告诉了你所有零食的初始价值，并希望你能帮他计算一下，在这些零食全被卖出后，他最多能得到多少钱。\ \\
+	\textbf{输入输出格式}\\
+	\textbf{输入格式：}
+
+	第1行：一个整数N。
+
+	第2～N+1行：第i+1行包含零食i的价值vi。\\
+	\textbf{输出格式：}
+
+	一行一个数表示FJ在这些零食全被卖出后最多能得到的钱数。\\
+	\textbf{输入输出样例}\\
+	\textbf{输入样例：}
+
+	\begin{minted}{text}
+5
+1
+3
+1
+5
+2
+\end{minted}
+	\textbf{输出样例：}
+	\begin{minted}{text} 
+43
+\end{minted}
+	\textbf{说明}
+
+	样例解释：五个零食，在第一天FJ可以卖出1号零食（价值为1）或者5号零食（价值为2）。FJ按1,5,2,3,4顺序出售零食，获得的收益为$1\times 1+2\times 2+3\times 3+4\times 1+5\times 5=43$。
+\end{example}
+
+这题是个很经典的区间DP，区间DP的一般套路为设状态dp[l][r]为左端点为l，右端点为r区间[l,r]的值。
+
+初始状态为：f[i][i]为自己第一天被取也就是v[i]*n，尝试往左右拓展即可。边界条件为取完所有元素（即序列为空的状态）。
+
+状态转移方程：$f[l][r]=\max\{f[l][r-1]+v[r]*(n-i+1),f[l+1][r]+v[l]*(n-i+1)\}$.
+\ \\ \par
+于是这两种DP就都讲完了，相信大家对DP有了更深一步的了解。下面我们将学习更复杂的DP，可能是省选难度的DP了（不存在的，NOIp 2017就考了一道状压DP）。
+\begin{center}\includegraphics[scale=0.8]{47046948_p0.png}\end{center}
+\note
