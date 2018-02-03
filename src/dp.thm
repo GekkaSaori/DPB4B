@@ -1,0 +1,21 @@
+\contentsline {definition}{{定义}{1.1.{1}}{状态}}{2}{definition.1.1.1}
+\contentsline {definition}{{定义}{1.1.{2}}{状态转移方程}}{2}{definition.1.1.2}
+\contentsline {example}{{例题}{1.2.{1}}{}}{2}{example.1.2.1}
+\contentsline {solve}{{解法}{1}{}}{4}{solve.1}
+\contentsline {definition}{{定义}{2.1.{1}}{最长上升子序列}}{5}{definition.2.1.1}
+\contentsline {example}{{例题}{2.1.{1}}{}}{8}{example.2.1.1}
+\contentsline {definition}{{定义}{2.2.{1}}{最长公共子序列}}{9}{definition.2.2.1}
+\contentsline {thm}{{定理}{2.2.{1}}{LCS的最优子结构}}{9}{thm.2.2.1}
+\contentsline {Proof}{{证明}{1}{}}{10}{Proof.1}
+\contentsline {definition}{{定义}{3.1.{1}}{背包问题(Knapsack problem)}}{12}{definition.3.1.1}
+\contentsline {definition}{{定义}{3.2.{1}}{01背包问题}}{13}{definition.3.2.1}
+\contentsline {example}{{例题}{3.2.{1}}{}}{13}{example.3.2.1}
+\contentsline {example}{{例题}{3.2.{2}}{}}{14}{example.3.2.2}
+\contentsline {definition}{{定义}{3.3.{1}}{完全背包问题}}{17}{definition.3.3.1}
+\contentsline {definition}{{定义}{3.3.{2}}{多重背包问题}}{17}{definition.3.3.2}
+\contentsline {definition}{{定义}{3.3.{3}}{混合背包问题}}{17}{definition.3.3.3}
+\contentsline {definition}{{定义}{3.4.{1}}{二维背包问题}}{19}{definition.3.4.1}
+\contentsline {definition}{{定义}{3.4.{2}}{分组背包问题}}{19}{definition.3.4.2}
+\contentsline {example}{{例题}{3.5.{1}}{}}{20}{example.3.5.1}
+\contentsline {example}{{例题}{3.5.{2}}{}}{22}{example.3.5.2}
+\contentsline {definition}{{定义}{3.5.{1}}{泛化物品}}{23}{definition.3.5.1}
