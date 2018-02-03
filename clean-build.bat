@@ -8,8 +8,8 @@ cd ..
 mkdir tmp
 @xcopy src tmp /E /Q /C >NUL
 cd tmp
-latexmk -f -lualatex --shell-escape %~dp0/tmp/DP.tex >> ..\logs.log
-@copy DP.pdf ..\DP.pdf >NUL
+latexmk -f -lualatex --shell-escape %~dp0/tmp/main.tex >> ..\logs.log
+@copy main.pdf ..\main.pdf >NUL
 @copy ver\version.cnf ..\src\ver\version.cnf /Y >NUL
 @del *.* /F /S /Q >NUL
 cd ..
