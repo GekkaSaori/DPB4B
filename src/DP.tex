@@ -15,6 +15,9 @@
 \usepackage[amsmath,thmmarks]{ntheorem}%theorem environment
 \usepackage{datetime2}
 
+%DEFINE VERSION:
+
+
 %Limitation:
 % There MUST be a space after Proofs!!!
 % Compile 3 Times Needed!!!
@@ -30,7 +33,14 @@
 % 2. \CreateShortcut{\songtizi}{stsong} Use \songtizi{...} to typeset words in SimSun.
 \newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 % Define Shortcut for \multirow command.
-%Modify it if necessary.
+
+% VERSION CONTROL:
+% USE `ver.lua' script to print version.
+\newcommand{\ver}{\directlua{dofile('./ver/ver.lua')}}
+% DEFINE \bumprevsi TO BUMP THE REVISION VERSION:
+\newcommand{\bumprevis}{\directlua{dofile('./ver/bumprevis.lua')}}
+\newcommand{\bumpminor}{\directlua{dofile('./ver/bumpminor.lua')}}
+\newcommand{\bumpmajor}{\directlua{dofile('./ver/bumpmajor.lua')}}
 
 % REDEFINE paragraph & subparagraph ENVIRONMENT:
 \makeatletter
@@ -44,13 +54,10 @@
 {\normalfont\normalsize\bfseries}}
 \makeatother
 
-% NEW THEOREM ENVIRONMENT DEFINATION:
+% NEW THEOREM ENVIRONMENTS DEFINATION:
 \newtheorem{example}{例题}[subsection]
-
 \newtheorem{definition}{定义}[subsection]
-
 \newtheorem{thm}{定理}[subsection]
-
 \theoremstyle{nonumberplain}
 \theoremseparator{ }
 \theoremheaderfont{\bf}
@@ -62,6 +69,7 @@
 \newcommand{\note}{\ \par
 	\subsection*{课堂笔记\\\tiny{Note on the text}}
 	\newpage}
+
 % PRESETs for minted, Contents, CTeX, picutures folders:
 \setminted[C++]{autogobble,breaklines,frame=lines,fontsize=\footnotesize,mathescape}
 \setminted[text]
@@ -78,7 +86,8 @@
 
 %DOCUMENT BEGINS:
 \begin{document}
-\title{\Huge 动态规划入门\\\Large Dynamic Programming Book for Beginners\\\author{Mingqi\_H}\date{\emph{version = 2.0\alpha}\\Build Time: \DTMnow}}
+\bumprevis
+\title{\Huge 动态规划入门\\\Large Dynamic Programming Book for Beginners\\\author{Mingqi\_H}\date{\emph{version = \ver\\}Build Time: \DTMnow}}
 \maketitle
 
 \thispagestyle{empty}%Disable Page Numbering for title page.
