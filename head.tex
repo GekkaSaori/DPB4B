@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[UTF8]{ctex}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{luatexja-ruby}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}
+\usepackage[colorlinks,linkcolor=red]{hyperref}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage{minted}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{datetime2}
+
+
+
+\newcommand{\DeclareCJKFont}[2]{\setCJKfamilyfont{#1}{#2}}
+
+\newcommand{\CreateShortcutForCJKFont}[2]{\newcommand*{#1}[1]{{\CJKfamily{#2}##1}}}
+
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+
+\newcommand{\ver}{\directlua{dofile('./ver/ver.lua')}}
+
+\newcommand{\bumprevis}{\directlua{dofile('./ver/bumprevis.lua')}}
+\newcommand{\bumpminor}{\directlua{dofile('./ver/bumpminor.lua')}}
+\newcommand{\bumpmajor}{\directlua{dofile('./ver/bumpmajor.lua')}}
+
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{3.25ex \@plus1ex \@minus.2ex}
+{1.5ex \@plus.2ex}
+{\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+{3.25ex \@plus1ex \@minus.2ex}
+{1.5ex \@plus.2ex}
+{\normalfont\normalsize\bfseries}}
+\makeatother
+
+
+\newtheorem{example}{例题}[subsection]
+\newtheorem{definition}{定义}[subsection]
+\newtheorem{thm}{定理}[subsection]
+\theoremstyle{nonumberplain}
+\theoremseparator{ }
+\theoremheaderfont{\bf}
+\theorembodyfont{\normalfont}
+\theoremsymbol{\rule{1ex}{1ex}}
+\newtheorem{Proof}{证明}
+\newtheorem{solve}{解法}
+
+\newcommand{\adots}{\mathinner{\mskip1mu\raise1pt\vbox{\kern7pt\hbox{.}}  
+		\mskip2mu\raise4pt\hbox{.}\mskip2mu\raise7pt\hbox{.}\mskip1mu}}
+
+\newcommand{\note}{\ \par
+	\subsection*{课堂笔记\\\tiny{Note on the text}}
+	\newpage}
+
+\setminted[C++]{autogobble,breaklines,frame=lines,fontsize=\footnotesize,mathescape}
+\setminted[text]
+{autogobble,breaklines,frame=single,fontsize=\footnotesize,mathescape}
+\ctexset{punct={kaiming},linestretch={2}}
+\graphicspath{{./pictures/}}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\begin{document}
+	\bumprevis
+	\title{\Huge 动态规划入门\\\Large Dynamic Programming Book for Beginners\\
+		\author{Mingqi\_H\ and\ wcz}\date{\emph{version = \ver\\branch = 1.0}Build Time: \DTMnow}}
+	\maketitle
+	
+	\thispagestyle{empty}%Disable Page Numbering for title page.
+	\pagestyle{empty}%Disable Page Numbering temporarily.
+	
+	\ \\
+	\ \\
+	\ \\
+	\newpage
+	\ \\\ \\
+	\begin{center}\em{\large{To Hatsune Miku}}\end{center}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\pagestyle{plain}%Enable Page numbering.
+	\setcounter{page}{1}
+	\setcounter{section}{-1}
