@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k+kt}{int} \PYG{n}{f}\PYG{p}{[}\PYG{l+m+mi}{1000}\PYG{p}{][}\PYG{l+m+mi}{1000}\PYG{p}{];}\PYG{c+c1}{//与搜索的参数个数相同}
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{err}{找到了这个问题的解}\PYG{p}{)} \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{f}\PYG{p}{[}\PYG{n}{a}\PYG{p}{][}\PYG{n}{b}\PYG{p}{]}\PYG{o}{!=}\PYG{n}{nil}\PYG{p}{)} \PYG{k}{return} \PYG{n}{f}\PYG{p}{[}\PYG{n}{a}\PYG{p}{][}\PYG{n}{b}\PYG{p}{];}\PYG{c+c1}{//这里的nil表示一个无效的值，可以认为是在正常情况下不可能出现的一个值}
+    \PYG{c+c1}{//状态转移过程被省略一部分}
+    \PYG{k}{return} \PYG{n}{f}\PYG{p}{[}\PYG{n}{a}\PYG{p}{][}\PYG{n}{b}\PYG{p}{]}\PYG{o}{=}\PYG{n}{dfs}\PYG{p}{(...,...);}\PYG{c+c1}{//这一句原来是return dfs(...,...);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
