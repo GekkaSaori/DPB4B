@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-\PYG{k+kt}{int} \PYG{n}{f}\PYG{p}{[}\PYG{l+m+mi}{1000}\PYG{p}{];}\PYG{c+c1}{//初始值为0，因为斐波那契数列中不可能出现0，所以0是非法的。}
-\PYG{k+kt}{int} \PYG{n+nf}{fib}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{)}
-\PYG{p}{\PYGZob{}}
-    \PYG{k}{if}\PYG{p}{(}\PYG{n}{x}\PYG{o}{==}\PYG{l+m+mi}{1}\PYG{o}{||}\PYG{n}{x}\PYG{o}{==}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}\PYG{c+c1}{//递归边界条件}
-    \PYG{k}{if}\PYG{p}{(}\PYG{n}{f}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{!=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{k}{return} \PYG{n}{f}\PYG{p}{[}\PYG{n}{x}\PYG{p}{];}\PYG{c+c1}{//如果已经计算过了就返回结果。}
-    \PYG{k}{return} \PYG{n}{f}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{=}\PYG{n}{fib}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{+}\PYG{n}{fib}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{);}\PYG{c+c1}{//如果还没有计算过就递归计算并保存结果。}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}
