@@ -1,11 +1,11 @@
 %HEADER:
 \documentclass{article}
 \usepackage[UTF8]{ctex}%Chinese supporting
-\usepackage{xcolor}%colors.
+\usepackage{xcolor}%colors
 \usepackage{amsmath}%math fonts
 \usepackage{amssymb}%math symbols
-%\usepackage{luatexja-ruby}%nihon kanji +rubi+, maybe no longer depend on `luatexja-ruby' package, engine will be switched to XeLaTeX to speed up build process.
-\usepackage[normalem]{ulem}%improved underlines, all underlines will be changed later!
+%\usepackage{luatexja-ruby}%nihon kanji +rubi+, **since no lyrics was included, maybe no longer depend on `luatexja-ruby'!
+\usepackage[normalem]{ulem}%improved underlines, **all underlines will be changed later!**
 \usepackage{graphicx}%pictures
 \usepackage[colorlinks,linkcolor=red]{hyperref}%hyperlinks
 \usepackage{multirow}%form
@@ -13,12 +13,11 @@
 \usepackage{makecell}%form
 \usepackage{minted}%code environment
 \usepackage[amsmath,thmmarks]{ntheorem}%theorem environment
-\usepackage{datetime2}
-\usepackage{yhmath}
-\usepackage{forest}
-\usepackage{rotating}
-%DEFINE VERSION:
-
+\usepackage{datetime2}%build time supporting
+\usepackage{yhmath}%\adots command
+\usepackage{forest}%tree environment for memoSearch section
+\usepackage{rotating}%rotate the tree for memoSearch section
+%\usepackage{tikz}%will be test later for painting
 
 %Limitation:
 % There MUST be a space after Proofs!!!
@@ -36,6 +35,8 @@
 \newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 % Define Shortcut for \multirow command.
 
+% **LINES BELOW WILL BE DELETED LATER IN ORDER TO SOLVE THE ENGINE SWITCH PROBLEM:**
+% **OTHER SOLUTIONS WILL BE GIVEN, MAYBE TURN TO USE SPECIAL BUILD SCRIPT TO BUILD**
 % VERSION CONTROL:
 % USE `ver.lua' script to print version.
 \newcommand{\ver}{\directlua{dofile('./ver/ver.lua')}\alpha}
@@ -43,6 +44,8 @@
 \newcommand{\bumprevis}{\directlua{dofile('./ver/bumprevis.lua')}}
 \newcommand{\bumpminor}{\directlua{dofile('./ver/bumpminor.lua')}}
 \newcommand{\bumpmajor}{\directlua{dofile('./ver/bumpmajor.lua')}}
+% ***********************************************************************************
+
 \newtheorem{solve}{解法}
 % REDEFINE paragraph & subparagraph ENVIRONMENT:
 \makeatletter
