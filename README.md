@@ -28,9 +28,9 @@ Use `Latexmk -lualatex --shell-escape DP.tex` to make (recommended),
 or you can compile the source manually using LuaLaTeX command.
 
 ### For Windows:
-Use the `clean-build.bat` script to rebuild the project, after that you will find the PDF file `DP.pdf` under the root dictionary of the project, and a log file `logs.log`.
+Please **ALWAYS** use the `clean-build.bat` script to rebuild the project, after that you will find the PDF file `DP.pdf` under the root dictionary of the project, and a log file `logs.log`.
 
-You can also build it using the editor you like.
+If you need to build it manally, please make sure that you have **DELETE ALL USELESS FILES** using the script `clean.bat`.
 
 ## FAQ
 0. Q: Why didn't you update the PDF file for a long time though you **DID** update your source code?
