@@ -1,0 +1,1586 @@
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX) 
+ system commands enabled.
+(e:/DPB4B//tmp/main.tex
+LaTeX2e <2017-04-15>
+(using write cache: C:/texlive/2017/texmf-var/luatex-cache/generic)(using read 
+cache: C:/texlive/2017/texmf-var/luatex-cache/generic C:/Users/hjp/.texlive2017
+/texmf-var/luatex-cache/generic)
+luaotfload | main : initialization completed in 0.844 seconds
+Babel <3.17> and hyphenation patterns for 1 language(s) loaded.
+(./workload/headers.tex (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2017/texmf-dist/tex/latex/base/size10.clo(load luc: C:/texlive/2017
+/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def))
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/base/fix-cm.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/ctablestack/ctablestack.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/everyhook/everyhook.sty
+(c:/texlive/2017/texmf-dist/tex/latex/svn-prov/svn-prov.sty))(load cache: C:/Us
+ers/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc)(load cac
+he: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_lmroman10-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/ltj-base.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty(load cache:
+ C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-jisx0208.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/tuenc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load luc: C:/texli
+ve/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc))
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3enc.def(load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def)))))
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+*** Reloading Xunicode for encoding 'TU' ***
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def)
+*************************************************
+* ctex warning: "fntef-not-available"
+* 
+* Functions of `CJKfntef' is not available in LuaLaTeX.
+*************************************************
+(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-gb
+1.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/jfm-quanjiao.lua))
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex-c5size.clo)(load luc: C:/texliv
+e/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsnew.def(
+load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simsun-1.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simkai.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simhei.luc
+)(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_simsun.luc))))
+ (c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/addons/luatexja-ruby.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/texlive/2017/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (autodetected): hluatex.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hluatex.def
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/minted/minted.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fvextra/fvextra.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)) (c:/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def)))
+(c:/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/catchfile.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/framed/framed.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+) (c:/texlive/2017/texmf-dist/tex/latex/datetime2/datetime2.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tracklang/tracklang.sty
+(c:/texlive/2017/texmf-dist/tex/generic/tracklang/tracklang.tex)))
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/yhmath.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+)) (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfit.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
+ode.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty))
+(./workload/Chapter0.tex
+E:\DPB4B\tmp>set  /p x=C:\Users\hjp\AppData\Local\Programs\Python\Python36\Scripts\pygmentize.exe 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+ (./main.aux)
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd)
+ABD: EverySelectfont initializing macros
+(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+ABD: EveryShipout initializing macros(load luc: C:/texlive/2017/texmf-var/luate
+x-cache/generic/fonts/otl/lmroman17-regular.luc)(load luc: C:/texlive/2017/texm
+f-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/texliv
+e/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/omxyhex.fd)(load luc: C:/texlive/2
+017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc)(load cache: 
+C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_kaiti.luc) [1{c:/texlive/201
+7/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2](load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load cache: C:/Use
+rs/hjp/.texlive2017/texmf-var/luatexja/extra_simhei.luc) [3](load luc: C:/texli
+ve/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)(load luc
+: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]) (./workload/ChapterMemoSearch.tex
+(./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle)
+(./_minted-main/C76A4BB86E9C149A9E2AF69A58757C18A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/sim
+fang.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+mono10-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmmono8-regular.luc)(load cache: C:/Users/hjp/.texlive2017/texmf-var/lu
+atexja/extra_fangsong.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmmonolt10-bold.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/n' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-r
+egular.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+(./_minted-main/E3DF33B87004C5CA3C4383CB835507FAA6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmm
+ono10-italic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/m/it' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+) [4]
+(./_minted-main/F75116AE12FAD23767064A5FF80D1306A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 111
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bo
+ld.luc) [5]) (./workload/Chapter1.tex [6] [7]
+(./_minted-main/D3E16DD21022AD0910656193D9C4B616A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmr
+oman8-italic.luc)
+
+LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <7.52812> not available
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 3.
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-
+boldoblique.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/it' undefined
+(Font)              using `LTJY3/FangSong(0)/bx/n' instead on input line 3.
+
+ [8])
+(./_minted-main/1FCEC88BE3651EEE8EBD5337B8C1ABE8A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [9](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/ot
+l/lmroman10-bolditalic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/SimSun(0)/bx/it' undefined
+(Font)              using `LTJY3/SimSun(0)/bx/n' instead on input line 122.
+
+
+(./_minted-main/9576C11D92EF968B5A40ADE9ABFB1005F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/4338E4929474FFC3EFF8E0688577238BF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [10] [11]) (./workload/Chapter2.tex
+(./_minted-main/39D87999E5C1D69354BD69E5F9B6248DA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [12]
+(./_minted-main/D508ACF92C892569237AE1BE3FEBF169A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/94C14AD603A91460B602B0440DC40660A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3B5F736BF02B915B3B5371D0ACE4506EA6631B57CC374AACF52F7DB091A1827
+6.pygtex [13])
+(./_minted-main/EAC214754DC55C93BA1518BFDD17EAABF9147D1F59338CC2CACAA47F156C386
+C.pygtex [14])
+(./_minted-main/DCA8222197833602DFACF0593332336DF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [15] [16<./pictures/CLRS_LCS.png>] [17] [18] [19])
+(./workload/Chapter3.tex [20] [21]
+(./_minted-main/6CD197011B994281975D90D6F5550BE7A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/E7F75479FB364524FDE990F3294B1A42A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3A8EB3CF86080772B03E2FEAEFEFF6AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex [22])
+(./_minted-main/52CBC096EC9299C398E414985E6E5904A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [23] [24]
+(./_minted-main/034C79607042131145D6D5D1D572DBD1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [25]
+(./_minted-main/253C6D1A5EA949EEAECFD7F0238D7EC6A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [26] [27] [28]
+(./_minted-main/2C36482D4127D8CFADFE79FCEEC23383F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/FB7D0638D051B26EE9C509027AF5232FF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [29] [30]
+(./_minted-main/E630C0C2D8B44C8683127014DCB12CD9F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/3BB50FF8EEB7AD116724B56A820139FAF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [31]) (./workload/Chapter4.tex
+(./_minted-main/16F4AC416FBDFD98685BD68D59723065F9147D1F59338CC2CACAA47F156C386
+C.pygtex [32])
+(./_minted-main/21FA2E849284BF7681C37A8B565BD934F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [33]
+(./_minted-main/42B1BB2FB313C281D282692D919C4145F9147D1F59338CC2CACAA47F156C386
+C.pygtex [34])
+(./_minted-main/F0287F33EBA7192E2A9C6A14F829AA1AF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [35]) (./workload/Chapter5.tex [36]
+(./_minted-main/8E04AA53BB55B8E56260E8B5411DBFBCF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/AA6ED9E0F26A6EBA784AAE8267DF1951F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [37]
+(./_minted-main/D8954E9918EC6D78EBE783FA5A0115AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [38]
+(./_minted-main/BB780BBE0C4C946F4957BE7FC4E48FB3A6631B57CC374AACF52F7DB091A1827
+6.pygtex [39]) [40] [41] [42]
+(./_minted-main/4DB9ED4AC83103A73F67256CEFC8819FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F2160C8FFEDF48068F2E1137E0A3A7E7F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/38818708C45FE62BFA53B05EEA31F390F9147D1F59338CC2CACAA47F156C386
+C.pygtex [43])
+(./_minted-main/3A5D140EBD9AE940817DEA1478C21EE1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B5782FAB45F2705CD209A79B3C1F34DDF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/9AE0EA9E3C9C6E1B9B6252C8395EFDC1F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [44] [45] [46]
+(./_minted-main/FFA998C47DDA9074E42691BB53A54B3BF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/48A24B70A0B376535542B996AF517398F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/159FD4F1851F6C6BB7486FB8EEC84272F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/1DCCA23355272056F04FE8BF20EDFCE0F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [47] [48<./pictures/treasure_1.png><./pictures/treasure_2.png>]
+(./_minted-main/356190303501634DD9CFC20BBD6EC758A6631B57CC374AACF52F7DB091A1827
+6.pygtex [49]) [50](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmroman7-bold.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmroman5-bold.luc) [51]
+(./_minted-main/D4BF5B8F60B36A1684F95346CF0F6E2FA6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/B0CF79781435B7B1CC6762E505BB6E85A6631B57CC374AACF52F7DB091A1827
+6.pygtex [52<./pictures/sa.png>](load luc: C:/texlive/2017/texmf-var/luatex-cac
+he/generic/fonts/otl/lmroman8-bold.luc) [53] [54])
+(./_minted-main/35B7954D3976B269BCF9179D2B8EEFD4F9147D1F59338CC2CACAA47F156C386
+C.pygtex [55])
+(./_minted-main/FBFEFF5EA6B0470EACA0F347970F2109A6631B57CC374AACF52F7DB091A1827
+6.pygtex [56] [57]) [58]
+(./_minted-main/57C53DEB7F04E279EE850C9E52816006A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/C5A88C6C0B0E3F0B7C43369577E3C1C4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [59]) [60]
+(./_minted-main/B34D9EEACE90DE2BDE4756B1A52367F1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [61]
+(./_minted-main/FF29558E780B69F95FCAD620CDCEF9B1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/CEA4ECA650D71BD9D552B4CF38E05702F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/D124463419086188838B81E70C9AB8F4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [62]) [63]
+(./_minted-main/3DF3348677A43BE8EA519315EDF6EA3DF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F3F71324BEA7A91EEE542AA5D5A154CFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [64]
+(./_minted-main/4EE2F8BA50AC50D90CF11EC3431E9775A6631B57CC374AACF52F7DB091A1827
+6.pygtex [65])
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 109
+8
+[66]) (./workload/Chapter6.tex [67] [68]
+(./_minted-main/82D09CFA32D60B55EE759720E3240019F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B026324C6904B2A9CB4B88D6D61C81D1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7031AB483FC56BFF5882FC42731B5A35F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7A6D01A8C8AD73B4F1CDDFEBD8890147F9147D1F59338CC2CACAA47F156C386
+C.pygtex [69]) [70] [71] [72]
+(./_minted-main/E8CEFEC6462CDA9C259D1B4E7A061F4FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/0D4A3C87048D95E97CF0DE13D89304BFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [73] [74] [75] [76] [77] (./main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+))
+(see the transcript file for additional information)
+ 72085 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 900 kern, 2 penalty, 18422 attribute, 5717
+ glue_spec, 966 attribute_list, 1 write, 10 user_defined nodes
+   avail lists: 1:17,2:113714,3:2394,4:1571,5:68,6:2232,7:3310,8:1346,9:1546,10
+:41,11:58
+<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><
+c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/te
+xlive/2017/texmf-dist/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf><c:/t
+exlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/WINDOW
+S/fonts/simkai.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman
+10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman6-bold.
+otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><
+c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf><c:/WIN
+DOWS/fonts/simfang.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmm
+ono8-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmonolt1
+0-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regul
+ar.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+<c:/WINDOWS/fonts/simhei.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/
+lm/lmroman12-italic.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+roman12-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
+n17-regular.otf><c:/WINDOWS/fonts/simsun.ttc><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cmextra/cmex8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (80 pages, 883508 bytes).
+Transcript written on main.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX) 
+ system commands enabled.
+(e:/DPB4B//tmp/main.tex
+LaTeX2e <2017-04-15>
+(using write cache: C:/texlive/2017/texmf-var/luatex-cache/generic)(using read 
+cache: C:/texlive/2017/texmf-var/luatex-cache/generic C:/Users/hjp/.texlive2017
+/texmf-var/luatex-cache/generic)
+luaotfload | main : initialization completed in 0.219 seconds
+Babel <3.17> and hyphenation patterns for 1 language(s) loaded.
+(./workload/headers.tex (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2017/texmf-dist/tex/latex/base/size10.clo(load luc: C:/texlive/2017
+/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def))
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/base/fix-cm.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/ctablestack/ctablestack.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/everyhook/everyhook.sty
+(c:/texlive/2017/texmf-dist/tex/latex/svn-prov/svn-prov.sty))(load cache: C:/Us
+ers/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc)(load cac
+he: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_lmroman10-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/ltj-base.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty(load cache:
+ C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-jisx0208.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/tuenc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load luc: C:/texli
+ve/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc))
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3enc.def(load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def)))))
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+*** Reloading Xunicode for encoding 'TU' ***
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def)
+*************************************************
+* ctex warning: "fntef-not-available"
+* 
+* Functions of `CJKfntef' is not available in LuaLaTeX.
+*************************************************
+(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-gb
+1.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/jfm-quanjiao.lua))
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex-c5size.clo)(load luc: C:/texliv
+e/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsnew.def(
+load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simsun-1.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simkai.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simhei.luc
+)(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_simsun.luc))))
+ (c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/addons/luatexja-ruby.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/texlive/2017/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (autodetected): hluatex.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hluatex.def
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/minted/minted.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fvextra/fvextra.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)) (c:/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def)))
+(c:/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/catchfile.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/framed/framed.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+) (c:/texlive/2017/texmf-dist/tex/latex/datetime2/datetime2.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tracklang/tracklang.sty
+(c:/texlive/2017/texmf-dist/tex/generic/tracklang/tracklang.tex)))
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/yhmath.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+)) (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfit.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
+ode.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty))
+(./workload/Chapter0.tex
+E:\DPB4B\tmp>set  /p x=C:\Users\hjp\AppData\Local\Programs\Python\Python36\Scripts\pygmentize.exe 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+ (./main.aux)
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd)
+ABD: EverySelectfont initializing macros
+(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./main.out) (./main.out) ABD: EveryShipout initializing macros(load luc: C:/te
+xlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc)(load
+ luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regula
+r.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmrom
+an6-regular.luc) (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/omxyhex.fd)(load luc: C:/texlive/2
+017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc)(load cache: 
+C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_kaiti.luc) [1{c:/texlive/201
+7/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2](load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load cache: C:/Use
+rs/hjp/.texlive2017/texmf-var/luatexja/extra_simhei.luc) (./main.toc(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)(
+load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-reg
+ular.luc) [3] [4]) [5]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]) (./workload/ChapterMemoSearch.tex
+(./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle)
+(./_minted-main/C76A4BB86E9C149A9E2AF69A58757C18A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/sim
+fang.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+mono10-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmmono8-regular.luc)(load cache: C:/Users/hjp/.texlive2017/texmf-var/lu
+atexja/extra_fangsong.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmmonolt10-bold.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/n' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-r
+egular.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+(./_minted-main/E3DF33B87004C5CA3C4383CB835507FAA6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmm
+ono10-italic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/m/it' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4]
+(./_minted-main/F75116AE12FAD23767064A5FF80D1306A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 111
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bo
+ld.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5]) (./workload/Chapter1.tex [6] [7]
+(./_minted-main/D3E16DD21022AD0910656193D9C4B616A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmr
+oman8-italic.luc)
+
+LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <7.52812> not available
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 3.
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-
+boldoblique.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/it' undefined
+(Font)              using `LTJY3/FangSong(0)/bx/n' instead on input line 3.
+
+ [8])
+(./_minted-main/1FCEC88BE3651EEE8EBD5337B8C1ABE8A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [9](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/ot
+l/lmroman10-bolditalic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/SimSun(0)/bx/it' undefined
+(Font)              using `LTJY3/SimSun(0)/bx/n' instead on input line 122.
+
+
+(./_minted-main/9576C11D92EF968B5A40ADE9ABFB1005F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/4338E4929474FFC3EFF8E0688577238BF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [10] [11]) (./workload/Chapter2.tex
+(./_minted-main/39D87999E5C1D69354BD69E5F9B6248DA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [12]
+(./_minted-main/D508ACF92C892569237AE1BE3FEBF169A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/94C14AD603A91460B602B0440DC40660A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3B5F736BF02B915B3B5371D0ACE4506EA6631B57CC374AACF52F7DB091A1827
+6.pygtex [13])
+(./_minted-main/EAC214754DC55C93BA1518BFDD17EAABF9147D1F59338CC2CACAA47F156C386
+C.pygtex [14])
+(./_minted-main/DCA8222197833602DFACF0593332336DF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [15] [16<./pictures/CLRS_LCS.png>] [17] [18] [19])
+(./workload/Chapter3.tex [20] [21]
+(./_minted-main/6CD197011B994281975D90D6F5550BE7A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/E7F75479FB364524FDE990F3294B1A42A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3A8EB3CF86080772B03E2FEAEFEFF6AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex [22])
+(./_minted-main/52CBC096EC9299C398E414985E6E5904A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [23] [24]
+(./_minted-main/034C79607042131145D6D5D1D572DBD1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [25]
+(./_minted-main/253C6D1A5EA949EEAECFD7F0238D7EC6A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [26] [27] [28]
+(./_minted-main/2C36482D4127D8CFADFE79FCEEC23383F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/FB7D0638D051B26EE9C509027AF5232FF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [29] [30]
+(./_minted-main/E630C0C2D8B44C8683127014DCB12CD9F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/3BB50FF8EEB7AD116724B56A820139FAF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [31]) (./workload/Chapter4.tex
+(./_minted-main/16F4AC416FBDFD98685BD68D59723065F9147D1F59338CC2CACAA47F156C386
+C.pygtex [32])
+(./_minted-main/21FA2E849284BF7681C37A8B565BD934F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [33]
+(./_minted-main/42B1BB2FB313C281D282692D919C4145F9147D1F59338CC2CACAA47F156C386
+C.pygtex [34])
+(./_minted-main/F0287F33EBA7192E2A9C6A14F829AA1AF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [35]) (./workload/Chapter5.tex [36]
+(./_minted-main/8E04AA53BB55B8E56260E8B5411DBFBCF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/AA6ED9E0F26A6EBA784AAE8267DF1951F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [37]
+(./_minted-main/D8954E9918EC6D78EBE783FA5A0115AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [38]
+(./_minted-main/BB780BBE0C4C946F4957BE7FC4E48FB3A6631B57CC374AACF52F7DB091A1827
+6.pygtex [39]) [40] [41] [42]
+(./_minted-main/4DB9ED4AC83103A73F67256CEFC8819FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F2160C8FFEDF48068F2E1137E0A3A7E7F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/38818708C45FE62BFA53B05EEA31F390F9147D1F59338CC2CACAA47F156C386
+C.pygtex [43])
+(./_minted-main/3A5D140EBD9AE940817DEA1478C21EE1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B5782FAB45F2705CD209A79B3C1F34DDF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/9AE0EA9E3C9C6E1B9B6252C8395EFDC1F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [44] [45] [46]
+(./_minted-main/FFA998C47DDA9074E42691BB53A54B3BF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/48A24B70A0B376535542B996AF517398F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/159FD4F1851F6C6BB7486FB8EEC84272F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/1DCCA23355272056F04FE8BF20EDFCE0F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [47] [48<./pictures/treasure_1.png><./pictures/treasure_2.png>]
+(./_minted-main/356190303501634DD9CFC20BBD6EC758A6631B57CC374AACF52F7DB091A1827
+6.pygtex [49]) [50](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmroman7-bold.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmroman5-bold.luc) [51]
+(./_minted-main/D4BF5B8F60B36A1684F95346CF0F6E2FA6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/B0CF79781435B7B1CC6762E505BB6E85A6631B57CC374AACF52F7DB091A1827
+6.pygtex [52<./pictures/sa.png>](load luc: C:/texlive/2017/texmf-var/luatex-cac
+he/generic/fonts/otl/lmroman8-bold.luc) [53] [54])
+(./_minted-main/35B7954D3976B269BCF9179D2B8EEFD4F9147D1F59338CC2CACAA47F156C386
+C.pygtex [55])
+(./_minted-main/FBFEFF5EA6B0470EACA0F347970F2109A6631B57CC374AACF52F7DB091A1827
+6.pygtex [56] [57]) [58]
+(./_minted-main/57C53DEB7F04E279EE850C9E52816006A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/C5A88C6C0B0E3F0B7C43369577E3C1C4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [59]) [60]
+(./_minted-main/B34D9EEACE90DE2BDE4756B1A52367F1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [61]
+(./_minted-main/FF29558E780B69F95FCAD620CDCEF9B1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/CEA4ECA650D71BD9D552B4CF38E05702F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/D124463419086188838B81E70C9AB8F4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [62]) [63]
+(./_minted-main/3DF3348677A43BE8EA519315EDF6EA3DF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F3F71324BEA7A91EEE542AA5D5A154CFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [64]
+(./_minted-main/4EE2F8BA50AC50D90CF11EC3431E9775A6631B57CC374AACF52F7DB091A1827
+6.pygtex [65])
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 109
+8
+[66]) (./workload/Chapter6.tex [67] [68]
+(./_minted-main/82D09CFA32D60B55EE759720E3240019F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B026324C6904B2A9CB4B88D6D61C81D1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7031AB483FC56BFF5882FC42731B5A35F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7A6D01A8C8AD73B4F1CDDFEBD8890147F9147D1F59338CC2CACAA47F156C386
+C.pygtex [69]) [70] [71] [72]
+(./_minted-main/E8CEFEC6462CDA9C259D1B4E7A061F4FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/0D4A3C87048D95E97CF0DE13D89304BFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [73] [74] [75] [76] [77] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+))
+(see the transcript file for additional information)
+ 72775 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 900 kern, 2 penalty, 18422 attribute, 5855
+ glue_spec, 966 attribute_list, 1 write, 10 user_defined nodes
+   avail lists: 1:15,2:113714,3:2394,4:1571,5:68,6:2232,7:3310,8:1346,9:1546,10
+:41,11:58
+<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><
+c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/te
+xlive/2017/texmf-dist/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf><c:/t
+exlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/WINDOW
+S/fonts/simkai.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman
+6-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-regula
+r.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf>
+<c:/WINDOWS/fonts/simfang.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public
+/lm/lmmono8-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+monolt10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regul
+ar.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
+<c:/WINDOWS/fonts/simhei.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/
+lm/lmroman12-italic.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+roman12-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
+n17-regular.otf><c:/WINDOWS/fonts/simsun.ttc><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cmextra/cmex8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (82 pages, 895146 bytes).
+Transcript written on main.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX) 
+ system commands enabled.
+(e:/DPB4B//tmp/main.tex
+LaTeX2e <2017-04-15>
+(using write cache: C:/texlive/2017/texmf-var/luatex-cache/generic)(using read 
+cache: C:/texlive/2017/texmf-var/luatex-cache/generic C:/Users/hjp/.texlive2017
+/texmf-var/luatex-cache/generic)
+luaotfload | main : initialization completed in 0.219 seconds
+Babel <3.17> and hyphenation patterns for 1 language(s) loaded.
+(./workload/headers.tex (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2017/texmf-dist/tex/latex/base/size10.clo(load luc: C:/texlive/2017
+/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def))
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/base/fix-cm.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/engine/ctex-engine-luatex.def
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+(c:/texlive/2017/texmf-dist/tex/luatex/ctablestack/ctablestack.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/keyval.tex))))
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/everyhook/everyhook.sty
+(c:/texlive/2017/texmf-dist/tex/latex/svn-prov/svn-prov.sty))(load cache: C:/Us
+ers/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc)(load cac
+he: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_lmroman10-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/ltj-base.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty(load cache:
+ C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-jisx0208.luc)))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/tuenc.def))
+(c:/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load luc: C:/texli
+ve/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc))
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3enc.def(load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc)(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def)))))
+(c:/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+*** Reloading Xunicode for encoding 'TU' ***
+) (c:/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def)
+*************************************************
+* ctex warning: "fntef-not-available"
+* 
+* Functions of `CJKfntef' is not available in LuaLaTeX.
+*************************************************
+(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/ltj-cid-auto-adobe-gb
+1.luc)
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/jfm-quanjiao.lua))
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(c:/texlive/2017/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/ctex-c5size.clo)(load luc: C:/texliv
+e/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
+(c:/texlive/2017/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsnew.def(
+load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simsun-1.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simkai.luc
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/simhei.luc
+)(load cache: C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_simsun.luc))))
+ (c:/texlive/2017/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(c:/texlive/2017/texmf-dist/tex/luatex/luatexja/addons/luatexja-ruby.sty)
+(c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/texlive/2017/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)))
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver (autodetected): hluatex.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hluatex.def
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/minted/minted.sty
+(c:/texlive/2017/texmf-dist/tex/latex/fvextra/fvextra.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)) (c:/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def)))
+(c:/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/shellesc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/catchfile.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/framed/framed.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+) (c:/texlive/2017/texmf-dist/tex/latex/datetime2/datetime2.sty
+(c:/texlive/2017/texmf-dist/tex/latex/tracklang/tracklang.sty
+(c:/texlive/2017/texmf-dist/tex/generic/tracklang/tracklang.tex)))
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/yhmath.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/forest/forest.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(c:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex)
+) (c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+)) (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y)
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y)) (c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex)))
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfit.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex)
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.c
+ode.tex
+(c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+(c:/texlive/2017/texmf-dist/tex/latex/pgfopts/pgfopts.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/elocalloc/elocalloc.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+(c:/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/inlinedef/inlinedef.sty))
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty))
+(./workload/Chapter0.tex
+E:\DPB4B\tmp>set  /p x=C:\Users\hjp\AppData\Local\Programs\Python\Python36\Scripts\pygmentize.exe 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+
+E:\DPB4B\tmp>set  /p x= 0<nul: 1>>main.aex 
+ (./main.aux)
+(c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd)
+ABD: EverySelectfont initializing macros
+(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./main.out) (./main.out) ABD: EveryShipout initializing macros(load luc: C:/te
+xlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc)(load
+ luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regula
+r.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmrom
+an6-regular.luc) (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(c:/texlive/2017/texmf-dist/tex/latex/yhmath/omxyhex.fd)(load luc: C:/texlive/2
+017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc)(load cache: 
+C:/Users/hjp/.texlive2017/texmf-var/luatexja/extra_kaiti.luc) [1{c:/texlive/201
+7/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2](load luc: C:/texlive/2017/
+texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load cache: C:/Use
+rs/hjp/.texlive2017/texmf-var/luatexja/extra_simhei.luc) (./main.toc(load luc: 
+C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)(
+load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-reg
+ular.luc) [3] [4]) [5]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]) (./workload/ChapterMemoSearch.tex
+(./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle)
+(./_minted-main/C76A4BB86E9C149A9E2AF69A58757C18A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/sim
+fang.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+mono10-regular.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmmono8-regular.luc)(load cache: C:/Users/hjp/.texlive2017/texmf-var/lu
+atexja/extra_fangsong.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmmonolt10-bold.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/n' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+)(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-r
+egular.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+(./_minted-main/E3DF33B87004C5CA3C4383CB835507FAA6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmm
+ono10-italic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/m/it' undefined
+(Font)              using `LTJY3/FangSong(0)/m/n' instead on input line 2.
+
+)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4]
+(./_minted-main/F75116AE12FAD23767064A5FF80D1306A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 111
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bo
+ld.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5]) (./workload/Chapter1.tex [6] [7]
+(./_minted-main/D3E16DD21022AD0910656193D9C4B616A6631B57CC374AACF52F7DB091A1827
+6.pygtex(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmr
+oman8-italic.luc)
+
+LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <7.52812> not available
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 3.
+
+(load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-
+boldoblique.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/FangSong(0)/bx/it' undefined
+(Font)              using `LTJY3/FangSong(0)/bx/n' instead on input line 3.
+
+ [8])
+(./_minted-main/1FCEC88BE3651EEE8EBD5337B8C1ABE8A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [9](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fonts/ot
+l/lmroman10-bolditalic.luc)
+
+LaTeX Font Warning: Font shape `LTJY3/SimSun(0)/bx/it' undefined
+(Font)              using `LTJY3/SimSun(0)/bx/n' instead on input line 122.
+
+
+(./_minted-main/9576C11D92EF968B5A40ADE9ABFB1005F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/4338E4929474FFC3EFF8E0688577238BF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [10] [11]) (./workload/Chapter2.tex
+(./_minted-main/39D87999E5C1D69354BD69E5F9B6248DA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [12]
+(./_minted-main/D508ACF92C892569237AE1BE3FEBF169A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/94C14AD603A91460B602B0440DC40660A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3B5F736BF02B915B3B5371D0ACE4506EA6631B57CC374AACF52F7DB091A1827
+6.pygtex [13])
+(./_minted-main/EAC214754DC55C93BA1518BFDD17EAABF9147D1F59338CC2CACAA47F156C386
+C.pygtex [14])
+(./_minted-main/DCA8222197833602DFACF0593332336DF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [15] [16<./pictures/CLRS_LCS.png>] [17] [18] [19])
+(./workload/Chapter3.tex [20] [21]
+(./_minted-main/6CD197011B994281975D90D6F5550BE7A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/E7F75479FB364524FDE990F3294B1A42A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/3A8EB3CF86080772B03E2FEAEFEFF6AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex [22])
+(./_minted-main/52CBC096EC9299C398E414985E6E5904A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [23] [24]
+(./_minted-main/034C79607042131145D6D5D1D572DBD1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [25]
+(./_minted-main/253C6D1A5EA949EEAECFD7F0238D7EC6A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [26] [27] [28]
+(./_minted-main/2C36482D4127D8CFADFE79FCEEC23383F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/FB7D0638D051B26EE9C509027AF5232FF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [29] [30]
+(./_minted-main/E630C0C2D8B44C8683127014DCB12CD9F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/3BB50FF8EEB7AD116724B56A820139FAF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [31]) (./workload/Chapter4.tex
+(./_minted-main/16F4AC416FBDFD98685BD68D59723065F9147D1F59338CC2CACAA47F156C386
+C.pygtex [32])
+(./_minted-main/21FA2E849284BF7681C37A8B565BD934F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [33]
+(./_minted-main/42B1BB2FB313C281D282692D919C4145F9147D1F59338CC2CACAA47F156C386
+C.pygtex [34])
+(./_minted-main/F0287F33EBA7192E2A9C6A14F829AA1AF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [35]) (./workload/Chapter5.tex [36]
+(./_minted-main/8E04AA53BB55B8E56260E8B5411DBFBCF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/AA6ED9E0F26A6EBA784AAE8267DF1951F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [37]
+(./_minted-main/D8954E9918EC6D78EBE783FA5A0115AEA6631B57CC374AACF52F7DB091A1827
+6.pygtex) [38]
+(./_minted-main/BB780BBE0C4C946F4957BE7FC4E48FB3A6631B57CC374AACF52F7DB091A1827
+6.pygtex [39]) [40] [41] [42]
+(./_minted-main/4DB9ED4AC83103A73F67256CEFC8819FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F2160C8FFEDF48068F2E1137E0A3A7E7F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/38818708C45FE62BFA53B05EEA31F390F9147D1F59338CC2CACAA47F156C386
+C.pygtex [43])
+(./_minted-main/3A5D140EBD9AE940817DEA1478C21EE1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B5782FAB45F2705CD209A79B3C1F34DDF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/9AE0EA9E3C9C6E1B9B6252C8395EFDC1F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [44] [45] [46]
+(./_minted-main/FFA998C47DDA9074E42691BB53A54B3BF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/48A24B70A0B376535542B996AF517398F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/159FD4F1851F6C6BB7486FB8EEC84272F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/1DCCA23355272056F04FE8BF20EDFCE0F9147D1F59338CC2CACAA47F156C386
+C.pygtex) [47] [48<./pictures/treasure_1.png><./pictures/treasure_2.png>]
+(./_minted-main/356190303501634DD9CFC20BBD6EC758A6631B57CC374AACF52F7DB091A1827
+6.pygtex [49]) [50](load luc: C:/texlive/2017/texmf-var/luatex-cache/generic/fo
+nts/otl/lmroman7-bold.luc)(load luc: C:/texlive/2017/texmf-var/luatex-cache/gen
+eric/fonts/otl/lmroman5-bold.luc) [51]
+(./_minted-main/D4BF5B8F60B36A1684F95346CF0F6E2FA6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/B0CF79781435B7B1CC6762E505BB6E85A6631B57CC374AACF52F7DB091A1827
+6.pygtex [52<./pictures/sa.png>](load luc: C:/texlive/2017/texmf-var/luatex-cac
+he/generic/fonts/otl/lmroman8-bold.luc) [53] [54])
+(./_minted-main/35B7954D3976B269BCF9179D2B8EEFD4F9147D1F59338CC2CACAA47F156C386
+C.pygtex [55])
+(./_minted-main/FBFEFF5EA6B0470EACA0F347970F2109A6631B57CC374AACF52F7DB091A1827
+6.pygtex [56] [57]) [58]
+(./_minted-main/57C53DEB7F04E279EE850C9E52816006A6631B57CC374AACF52F7DB091A1827
+6.pygtex)
+(./_minted-main/C5A88C6C0B0E3F0B7C43369577E3C1C4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [59]) [60]
+(./_minted-main/B34D9EEACE90DE2BDE4756B1A52367F1A6631B57CC374AACF52F7DB091A1827
+6.pygtex) [61]
+(./_minted-main/FF29558E780B69F95FCAD620CDCEF9B1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/CEA4ECA650D71BD9D552B4CF38E05702F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/D124463419086188838B81E70C9AB8F4A6631B57CC374AACF52F7DB091A1827
+6.pygtex [62]) [63]
+(./_minted-main/3DF3348677A43BE8EA519315EDF6EA3DF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/F3F71324BEA7A91EEE542AA5D5A154CFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [64]
+(./_minted-main/4EE2F8BA50AC50D90CF11EC3431E9775A6631B57CC374AACF52F7DB091A1827
+6.pygtex [65])
+Module luatexbase Warning: Function `ltj.main' returned false
+(luatexbase)               in callback `pre_linebreak_filter' on input line 109
+8
+[66]) (./workload/Chapter6.tex [67] [68]
+(./_minted-main/82D09CFA32D60B55EE759720E3240019F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/B026324C6904B2A9CB4B88D6D61C81D1F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7031AB483FC56BFF5882FC42731B5A35F9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/7A6D01A8C8AD73B4F1CDDFEBD8890147F9147D1F59338CC2CACAA47F156C386
+C.pygtex [69]) [70] [71] [72]
+(./_minted-main/E8CEFEC6462CDA9C259D1B4E7A061F4FF9147D1F59338CC2CACAA47F156C386
+C.pygtex)
+(./_minted-main/0D4A3C87048D95E97CF0DE13D89304BFF9147D1F59338CC2CACAA47F156C386
+C.pygtex) [73] [74] [75] [76] [77] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+))
+(see the transcript file for additional information)
+ 72775 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 900 kern, 2 penalty, 18422 attribute, 5855
+ glue_spec, 966 attribute_list, 1 write, 10 user_defined nodes
+   avail lists: 1:15,2:113714,3:2394,4:1571,5:68,6:2232,7:3310,8:1346,9:1546,10
+:41,11:58
+<c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><
+c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/te
+xlive/2017/texmf-dist/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf><c:/t
+exlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/WINDOW
+S/fonts/simkai.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman
+6-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-regula
+r.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf>
+<c:/WINDOWS/fonts/simfang.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public
+/lm/lmmono8-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+monolt10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regul
+ar.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
+<c:/WINDOWS/fonts/simhei.ttf><c:/texlive/2017/texmf-dist/fonts/opentype/public/
+lm/lmroman12-italic.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+roman12-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
+n17-regular.otf><c:/WINDOWS/fonts/simsun.ttc><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cmextra/cmex8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (82 pages, 894950 bytes).
+Transcript written on main.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: All targets (main.pdf) are up-to-date
