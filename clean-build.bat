@@ -14,4 +14,3 @@ latexmk -f -lualatex --shell-escape %~dp0/tmp/main.tex >> ..\logs.log
 @del *.* /F /S /Q >NUL
 cd ..
 @rd tmp /S /Q >NUL
-pause
